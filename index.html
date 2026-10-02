@@ -4,48 +4,57 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Vaishnavi Rathi</title>
-<meta name="description" content="Vaishnavi Rathi, embedded systems and IoT engineer. MS Electrical and Computer Engineering at Northeastern University. Open to co-op, internship and full-time roles.">
-<meta property="og:title" content="Vaishnavi Rathi · Embedded Systems &amp; IoT Engineer">
-<meta property="og:description" content="Low-power firmware, IoT pipelines and a solar-powered UV wearable. MS ECE at Northeastern University, Boston.">
+<meta name="description" content="Vaishnavi Rathi, embedded firmware engineer and MS ECE student at Northeastern University. STM32 and ESP32 firmware, IoT, TinyML and GPU performance work. Seeking a Spring 2027 co-op.">
+<meta property="og:title" content="Vaishnavi Rathi · Embedded Firmware Engineer">
+<meta property="og:description" content="STM32 and ESP32 firmware, IoT devices, TinyML and CUDA performance work. MS ECE at Northeastern University, Boston.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="photo.jpg">
 <meta name="theme-color" content="#07080F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236A55F5'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3EVR%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: dark glass portfolio. Fixed animated circuit-board canvas behind frosted cards;
-   floating pill nav with scroll-spy; hero card + photo card; numbered sections in one 72rem column.
-   Single dark theme by design. */
+/* Layout: dark glass portfolio. Fixed animated circuit canvas; floating pill nav over a top fade;
+   hero (intro card + photo with floating badges), KPI strip and tech ticker; then About, a filterable
+   bento of project cards with per-project SVG covers, an experience rail, publications/patents,
+   skills, education and contact. One 74rem column. Single dark theme by design. */
 :root{
   color-scheme:dark;
   --bg:#07080F;
   --bg-2:#0D0F1C;
-  --glass:rgba(17,19,33,.62);
-  --glass-strong:rgba(20,22,38,.82);
-  --glass-top:rgba(255,255,255,.055);
-  --well:rgba(4,5,11,.5);
-  --line:rgba(255,255,255,.085);
-  --line-2:rgba(255,255,255,.16);
-  --chip:rgba(255,255,255,.05);
-  --text:#ECEDF6;
-  --text-2:#ABAFC6;
-  --text-3:#858AAB;
+  --glass:rgba(16,18,32,.72);
+  --glass-strong:rgba(18,20,36,.86);
+  --glass-top:rgba(255,255,255,.06);
+  --well:rgba(4,5,11,.55);
+  --line:rgba(255,255,255,.09);
+  --line-2:rgba(255,255,255,.17);
+  --chip:rgba(255,255,255,.055);
+  --text:#F2F3F9;
+  --text-2:#C3C7D9;
+  --text-3:#9095B2;
   --accent:#6A55F5;
   --accent-hi:#7C6CFF;
-  --accent-text:#AFA3FF;
-  --accent-soft:rgba(106,85,245,.18);
-  --blue:#4F9DFF;
+  --accent-text:#B3A8FF;
+  --accent-soft:rgba(106,85,245,.2);
+  --blue:#5AA6FF;
   --ok:#3DDC84;
-  --spot:rgba(140,120,255,.10);
-  --trace:rgba(150,140,255,.11);
-  --pulse:#C3B9FF;
-  --glow:rgba(140,120,255,.38);
-  --aura-1:rgba(106,85,245,.30);
-  --aura-2:rgba(79,157,255,.20);
-  --aura-3:rgba(61,220,190,.10);
+  --warn:#F5B84B;
+  --spot:rgba(140,120,255,.11);
+  --trace:rgba(150,140,255,.13);
+  --pulse:#C9C0FF;
+  --glow:rgba(140,120,255,.4);
+  --aura-1:rgba(106,85,245,.32);
+  --aura-2:rgba(90,166,255,.2);
+  --aura-3:rgba(61,220,190,.1);
   --term:#05060C;
   --white:#FFFFFF;
+  --shade:rgba(0,0,0,.55);
+  --uvi-1:#4FA83D;
+  --uvi-2:#E9C41C;
+  --uvi-3:#EE8A1F;
+  --uvi-4:#D9402E;
+  --uvi-5:#8A57D3;
 
   --font:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
@@ -59,24 +68,20 @@
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:5.5rem;-webkit-text-size-adjust:100%}
 body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:var(--font);
-  font-size:1rem;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:var(--font);font-size:1rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
-h1,h2,h3,p,ul,ol,figure{margin:0}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
 ul,ol{padding:0;list-style:none}
 a{color:inherit}
 img{max-width:100%;display:block}
-button{font:inherit}
-:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px;border-radius:6px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px;border-radius:8px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none!important}
 
-/* ---------- background scene ---------- */
+/* ---------- background ---------- */
 .scene{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .aura{position:absolute;width:70vmax;height:70vmax;border-radius:50%;animation:drift 28s ease-in-out infinite alternate}
 .aura--1{left:-25vmax;top:-30vmax;background:radial-gradient(circle,var(--aura-1),transparent 62%)}
@@ -84,13 +89,10 @@ button{font:inherit}
 .aura--3{left:10vw;bottom:-45vmax;background:radial-gradient(circle,var(--aura-3),transparent 62%);animation-duration:40s}
 @keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(6vmax,4vmax,0)}}
 #circuit{position:absolute;inset:0;width:100%;height:100%}
-.scene::after{
-  content:"";position:absolute;inset:0;
-  background:radial-gradient(ellipse 120% 90% at 50% 30%,transparent 45%,var(--bg) 100%);
-}
+.scene::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 120% 90% at 50% 30%,transparent 45%,var(--bg) 100%)}
 
 .page{position:relative;z-index:1}
-.wrap{max-width:72rem;margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+.wrap{max-width:74rem;margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
 
 /* ---------- glass ---------- */
 .glass{
@@ -102,294 +104,296 @@ button{font:inherit}
   border-radius:var(--r-lg);
   -webkit-backdrop-filter:blur(16px) saturate(140%);
   backdrop-filter:blur(16px) saturate(140%);
-  box-shadow:inset 0 1px 0 var(--glass-top),0 24px 60px -28px var(--bg);
+  box-shadow:inset 0 1px 0 var(--glass-top),0 24px 60px -28px var(--shade);
   min-width:0;
 }
 
 /* ---------- nav ---------- */
-.nav{
-  position:fixed;z-index:50;
-  top:calc(env(safe-area-inset-top,0px) + .8rem);
-  left:50%;transform:translateX(-50%);
-  max-width:calc(100% - 1.5rem);
+.nav-fade{
+  position:fixed;z-index:40;left:0;right:0;top:0;height:calc(5.25rem + env(safe-area-inset-top,0px));pointer-events:none;
+  background:linear-gradient(180deg,var(--bg) 35%,rgba(7,8,15,.7) 65%,transparent);
 }
+.nav{position:fixed;z-index:50;top:calc(env(safe-area-inset-top,0px) + .8rem);left:50%;transform:translateX(-50%);max-width:calc(100% - 1.5rem)}
 .nav ul{
-  display:flex;gap:2px;padding:5px;
-  border-radius:999px;
-  background:var(--glass-strong);
-  border:1px solid var(--line);
-  -webkit-backdrop-filter:blur(18px) saturate(150%);
-  backdrop-filter:blur(18px) saturate(150%);
-  box-shadow:0 12px 40px -16px var(--bg);
+  display:flex;gap:2px;padding:5px;border-radius:999px;
+  background:var(--glass-strong);border:1px solid var(--line);
+  -webkit-backdrop-filter:blur(18px) saturate(150%);backdrop-filter:blur(18px) saturate(150%);
+  box-shadow:0 12px 40px -16px var(--shade);
   overflow-x:auto;scrollbar-width:none;
 }
 .nav ul::-webkit-scrollbar{display:none}
-.nav a{
-  display:block;padding:.5rem .95rem;border-radius:999px;
-  font-size:.84rem;font-weight:500;color:var(--text-2);text-decoration:none;white-space:nowrap;
-  transition:color .2s,background-color .2s;
-}
+.nav a{display:block;padding:.5rem .95rem;border-radius:999px;font-size:.85rem;font-weight:500;color:var(--text-2);text-decoration:none;white-space:nowrap;transition:color .2s,background-color .2s}
 .nav a:hover{color:var(--text)}
-.nav a.is-active{background:var(--accent-soft);color:var(--text);box-shadow:inset 0 0 0 1px rgba(175,163,255,.25)}
+.nav a.is-active{background:var(--accent-soft);color:var(--text);box-shadow:inset 0 0 0 1px rgba(179,168,255,.28)}
 
-/* ---------- hero ---------- */
-.hero{padding-top:calc(5.75rem + env(safe-area-inset-top,0px))}
-.hero__grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:clamp(1.25rem,3vw,2.5rem);align-items:center}
-.hero__card{border-radius:var(--r-xl);padding:clamp(1.5rem,4vw,2.75rem);display:grid;gap:1.25rem}
+/* ---------- shared bits ---------- */
 .pill{
   display:inline-flex;align-items:center;gap:.6rem;justify-self:start;
-  padding:.45rem .9rem;border-radius:999px;
-  background:var(--chip);border:1px solid var(--line-2);
+  padding:.45rem .95rem;border-radius:999px;background:var(--chip);border:1px solid var(--line-2);
   font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text);
 }
-.dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(61,220,132,.18),0 0 12px var(--ok);animation:pulse 2.4s ease-in-out infinite}
+.dot{flex:none;width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px rgba(61,220,132,.18),0 0 12px var(--ok);animation:pulse 2.4s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.5}}
-.hi{color:var(--text-2);font-size:1.05rem;margin-bottom:-.75rem}
-.hero h1{
-  font-size:clamp(2.75rem,1rem + 5.4vw,5.25rem);
-  font-weight:800;line-height:.98;letter-spacing:-.045em;
-}
-.hero h1 span{display:block}
-.grad{
-  background:linear-gradient(100deg,var(--text) 10%,var(--accent-text) 70%,var(--blue));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.role{font-family:var(--mono);font-size:.92rem;color:var(--text-2);min-height:1.6em}
-.caret{display:inline-block;width:.55em;height:1.05em;margin-left:2px;vertical-align:-.15em;background:var(--accent-text);animation:caret 1s steps(1) infinite}
-@keyframes caret{50%{opacity:0}}
-.intro{color:var(--text-2);font-size:1.05rem;line-height:1.7;max-width:54ch;text-wrap:pretty}
-.intro strong{color:var(--text);font-weight:600}
-.actions{display:flex;flex-wrap:wrap;gap:.7rem}
+.grad{background:linear-gradient(100deg,var(--text) 5%,var(--accent-text) 60%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn{
-  display:inline-flex;align-items:center;gap:.5rem;
-  padding:.8rem 1.3rem;border-radius:999px;
+  display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:999px;
   font-size:.9rem;font-weight:700;text-decoration:none;line-height:1.1;cursor:pointer;
   border:1px solid var(--line-2);background:var(--chip);color:var(--text);
   transition:transform .15s,background-color .2s,border-color .2s,box-shadow .2s;
 }
-.btn:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.09)}
+.btn:hover{border-color:rgba(255,255,255,.32);background:rgba(255,255,255,.1)}
 .btn:active{transform:translateY(1px)}
 .btn--primary{background:var(--accent);border-color:var(--accent);color:var(--white);box-shadow:0 10px 30px -10px var(--accent)}
 .btn--primary:hover{background:var(--accent-hi);border-color:var(--accent-hi);box-shadow:0 12px 34px -8px var(--accent)}
 .btn svg{width:1rem;height:1rem;flex:none}
-.stats{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;
-  padding-top:1.4rem;margin-top:.25rem;border-top:1px solid var(--line);
-}
-.stat{display:grid;gap:.15rem;align-content:start;min-width:0}
-.stat b{font-size:clamp(1.6rem,1.2rem + 1vw,2.1rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;font-variant-numeric:tabular-nums}
-.stat span{font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);line-height:1.35}
-.stat small{font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-text);line-height:1.35}
+.btn--sm{padding:.55rem .9rem;font-size:.8rem}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tags li{font-size:.72rem;font-weight:600;color:var(--text-2);padding:.3rem .62rem;border-radius:var(--r-sm);background:var(--chip);border:1px solid var(--line)}
+.date{flex:none;align-self:flex-start;font-size:.74rem;font-weight:600;color:var(--text-2);white-space:nowrap;padding:.35rem .8rem;border-radius:999px;background:var(--chip);border:1px solid var(--line-2)}
+.kicker{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-text)}
 
-.photo-card{
-  justify-self:center;width:100%;max-width:22rem;
-  padding:.65rem;border-radius:var(--r-xl);
-  margin-top:clamp(0rem,8vw,6rem);
-}
-.photo-frame{
-  position:relative;aspect-ratio:4/5;max-width:100%;border-radius:calc(var(--r-xl) - .5rem);overflow:hidden;
-  background:
-    radial-gradient(110% 70% at 15% 5%,rgba(124,108,255,.55),transparent 60%),
-    radial-gradient(90% 70% at 95% 100%,rgba(79,157,255,.35),transparent 60%),
-    var(--bg-2);
-}
-.photo-frame svg.board{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
-.board path,.board circle{fill:none;stroke:rgba(255,255,255,.22);stroke-width:1.2}
-.board .pad{fill:rgba(255,255,255,.22);stroke:none}
-.monogram{
-  position:absolute;inset:0;display:grid;place-items:center;
-  font-size:clamp(4.5rem,10vw,6.5rem);font-weight:800;letter-spacing:-.06em;color:var(--white);
-  text-shadow:0 10px 40px rgba(20,10,80,.6);
-}
+/* ---------- hero ---------- */
+.hero{padding-top:calc(6.25rem + env(safe-area-inset-top,0px))}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.hero__card{border-radius:var(--r-xl);padding:clamp(1.5rem,4vw,2.75rem);display:grid;gap:1.3rem}
+.hi{color:var(--text-2);font-size:1.1rem;margin-bottom:-.8rem}
+.hero h1{font-size:clamp(2.9rem,1rem + 5.8vw,5.6rem);font-weight:800;line-height:.96;letter-spacing:-.045em}
+.hero h1 span{display:block}
+.role{font-family:var(--mono);font-size:.95rem;color:var(--text-2);min-height:1.6em}
+.role b{color:var(--accent-text);font-weight:600}
+.caret{display:inline-block;width:.55em;height:1.05em;margin-left:2px;vertical-align:-.15em;background:var(--accent-text);animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
+.intro{color:var(--text-2);font-size:1.08rem;line-height:1.7;max-width:52ch;text-wrap:pretty}
+.intro strong{color:var(--text);font-weight:650}
+.actions{display:flex;flex-wrap:wrap;gap:.65rem}
+
+.portrait{position:relative;justify-self:center;width:100%;max-width:23rem}
+.portrait__card{padding:.65rem;border-radius:var(--r-xl)}
+.portrait__frame{position:relative;aspect-ratio:4/5;max-width:100%;border-radius:calc(var(--r-xl) - .5rem);overflow:hidden;background:radial-gradient(110% 70% at 15% 5%,rgba(124,108,255,.55),transparent 60%),var(--bg-2)}
+.portrait__frame::after{content:"";position:absolute;inset:auto 0 0 0;height:32%;background:linear-gradient(transparent,rgba(7,8,15,.75));pointer-events:none}
+.monogram{position:absolute;inset:0;display:grid;place-items:center;font-size:6rem;font-weight:800;letter-spacing:-.06em;color:var(--white)}
 .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.photo-frame::after{
-  content:"";position:absolute;inset:auto 0 0 0;height:32%;z-index:1;pointer-events:none;
-  background:linear-gradient(transparent,color-mix(in srgb,var(--bg) 70%,transparent));
+.portrait__loc{position:absolute;left:1rem;bottom:.9rem;z-index:2;font-size:.68rem;font-weight:800;letter-spacing:.16em;color:var(--white);text-shadow:0 1px 8px var(--shade)}
+.float{
+  position:absolute;z-index:3;display:flex;align-items:center;gap:.6rem;
+  padding:.6rem .85rem;border-radius:var(--r-md);
+  background:var(--glass-strong);border:1px solid var(--line-2);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  box-shadow:0 14px 34px -14px var(--shade);
+  animation:bob 6s ease-in-out infinite;
 }
-.photo-loc{
-  position:absolute;left:1rem;bottom:.9rem;z-index:2;
-  font-size:.68rem;font-weight:800;letter-spacing:.16em;color:var(--white);
-  text-shadow:0 1px 8px rgba(0,0,0,.7);
+.float b{display:block;font-size:.85rem;line-height:1.2}
+.float span{display:block;font-size:.66rem;color:var(--text-3);font-weight:600;letter-spacing:.04em}
+.float i{display:grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:10px;background:var(--accent-soft);color:var(--accent-text)}
+.float i svg{width:1.05rem;height:1.05rem}
+.float--a{top:1.4rem;left:-2.2rem}
+.float--b{bottom:4.2rem;right:-2rem;animation-delay:-3s}
+@keyframes bob{50%{transform:translateY(-6px)}}
+
+.kpis{
+  margin-top:clamp(1.25rem,3vw,2rem);
+  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  border-radius:var(--r-lg);overflow:hidden;
 }
+.kpi{padding:1.2rem 1.25rem;display:grid;gap:.15rem;align-content:start;min-width:0;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:0}
+.kpi b{font-size:clamp(1.6rem,1.15rem + 1.2vw,2.2rem);font-weight:800;letter-spacing:-.035em;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text)}
+.kpi small{font-size:.75rem;color:var(--text-3);line-height:1.4}
+
+.ticker{
+  margin-top:1rem;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.ticker__track{display:flex;gap:.6rem;width:max-content;animation:scroll 48s linear infinite}
+.ticker:hover .ticker__track{animation-play-state:paused}
+.ticker__track span{font-family:var(--mono);font-size:.78rem;font-weight:500;color:var(--text-2);padding:.45rem .85rem;border-radius:999px;border:1px solid var(--line);background:rgba(16,18,32,.6);white-space:nowrap}
+@keyframes scroll{to{transform:translateX(-50%)}}
 
 /* ---------- sections ---------- */
 .sec{padding-top:clamp(4.5rem,10vw,7.5rem)}
 .sec > .wrap{display:grid;gap:clamp(1.5rem,3.5vw,2.25rem)}
-.sec-head{display:grid;gap:.6rem}
-.sec-label{
-  display:inline-flex;align-items:center;gap:.7rem;
-  font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-text);
-}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:1rem 2rem}
+.sec-head > div:not(.filters){display:grid;gap:.6rem}
+.sec-label{display:inline-flex;align-items:center;gap:.7rem;font-size:.7rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-text)}
 .sec-label::before{content:"";width:1.6rem;height:1px;background:var(--accent-text)}
-.sec h2{
-  font-size:clamp(2.1rem,1.2rem + 3.2vw,3.4rem);font-weight:800;
-  line-height:1.04;letter-spacing:-.04em;text-wrap:balance;
-}
-.sec-sub{color:var(--text-2);font-size:1.05rem;max-width:60ch}
-
-.tags{display:flex;flex-wrap:wrap;gap:.4rem}
-.tags li{
-  font-size:.72rem;font-weight:600;color:var(--text-2);
-  padding:.32rem .65rem;border-radius:var(--r-sm);
-  background:var(--chip);border:1px solid var(--line);
-}
-.date{
-  flex:none;align-self:flex-start;
-  font-size:.74rem;font-weight:600;color:var(--text-2);white-space:nowrap;
-  padding:.35rem .8rem;border-radius:999px;background:var(--chip);border:1px solid var(--line-2);
-}
-.badge{
-  display:inline-grid;place-items:center;flex:none;
-  min-width:2.1rem;height:1.6rem;padding-inline:.4rem;border-radius:7px;
-  font-family:var(--mono);font-size:.64rem;font-weight:600;letter-spacing:.04em;
-  color:var(--accent-text);background:var(--accent-soft);border:1px solid rgba(175,163,255,.22);
-}
-
-/* projects */
-.projects{display:grid;gap:1.1rem}
-.project{padding:clamp(1.25rem,3.2vw,2rem);display:grid;gap:1.05rem}
-.project__top{display:flex;justify-content:space-between;gap:1rem}
-.project__title{display:grid;gap:.2rem;min-width:0}
-.project h3{font-size:clamp(1.35rem,1rem + 1.2vw,1.75rem);font-weight:800;letter-spacing:-.025em;line-height:1.2;color:var(--accent-text)}
-.project__kind{font-size:.875rem;color:var(--text-2)}
-.project__desc{color:var(--text-2);max-width:78ch;text-wrap:pretty}
-.metrics{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem .5rem;
-  padding:1rem .75rem;border-radius:var(--r-md);
-  background:var(--well);border:1px solid var(--line);
-}
-.metric{display:grid;gap:.1rem;text-align:center;min-width:0}
-.metric b{font-size:1.2rem;font-weight:800;letter-spacing:-.02em;line-height:1.25}
-.metric span{font-size:.6rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--text-3)}
-
-/* research bento */
-.bento{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:1.1rem}
-.feature{grid-row:span 3;padding:clamp(1.4rem,3.5vw,2.25rem);display:grid;gap:1.1rem;align-content:start}
-.feature__top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
-.icon-tile{
-  display:grid;place-items:center;width:3.4rem;height:3.4rem;border-radius:16px;
-  background:linear-gradient(140deg,var(--accent-hi),var(--blue));color:var(--white);
-  box-shadow:0 10px 30px -10px var(--accent);
-}
-.icon-tile svg{width:1.7rem;height:1.7rem}
-.feature__tag{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);padding:.4rem .8rem;border-radius:999px;border:1px solid var(--line-2)}
-.eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-text)}
-.feature__big{font-size:clamp(3.75rem,2rem + 6vw,6rem);font-weight:800;letter-spacing:-.06em;line-height:.9}
-.feature h3{font-size:1.2rem;font-weight:700;line-height:1.35;letter-spacing:-.01em;text-wrap:balance}
-.feature p{color:var(--text-2);text-wrap:pretty}
-.feature__stats{display:flex;flex-wrap:wrap;gap:1rem 2.25rem;padding-top:.5rem}
-.feature__stats div{display:grid}
-.feature__stats b{font-size:1.15rem;font-weight:800}
-.feature__stats span{font-size:.6rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--text-3)}
-.link-arrow{justify-self:end;font-size:.88rem;font-weight:600;color:var(--accent-text);text-decoration:none}
-.link-arrow:hover{text-decoration:underline;text-underline-offset:.25em}
-.mini{padding:1.35rem 1.5rem;display:grid;gap:.45rem;align-content:start}
-.mini__head{display:flex;align-items:center;gap:.6rem;font-size:.85rem;font-weight:700}
-.mini b{font-size:clamp(1.5rem,1.1rem + 1.2vw,1.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.15}
-.mini p{color:var(--text-2);font-size:.92rem}
+.sec h2{font-size:clamp(2.1rem,1.2rem + 3.2vw,3.4rem);font-weight:800;line-height:1.04;letter-spacing:-.04em;text-wrap:balance}
+.sec-sub{color:var(--text-2);font-size:1.05rem;max-width:58ch}
 
 /* about */
-.about{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:1.1rem;align-items:start}
-.about__text{padding:clamp(1.4rem,3.5vw,2.25rem);display:grid;gap:1.1rem;color:var(--text-2);font-size:1.02rem;line-height:1.75}
-.about__text p{max-width:62ch;text-wrap:pretty}
-.about__text strong{color:var(--text);font-weight:600}
-.callout{
-  padding:1.1rem 1.25rem;border-radius:var(--r-md);
-  background:var(--well);border:1px solid var(--line);border-left:3px solid var(--accent-hi);
-  color:var(--text);font-weight:600;font-size:1.05rem;line-height:1.55;
-}
-.facts{display:grid;gap:.7rem}
-.fact{display:flex;align-items:center;gap:.9rem;padding:.9rem 1rem;border-radius:var(--r-md)}
-.fact__icon{display:grid;place-items:center;flex:none;width:2.4rem;height:2.4rem;border-radius:11px;background:var(--accent-soft);color:var(--accent-text)}
-.fact__icon svg{width:1.15rem;height:1.15rem}
-.fact div{display:grid;min-width:0}
-.fact span{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
-.fact b{font-size:.95rem;font-weight:700;line-height:1.35}
+.about{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:1.1rem;align-items:stretch}
+.story{padding:clamp(1.4rem,3.5vw,2.25rem);display:grid;gap:1.1rem;align-content:start;color:var(--text-2);font-size:1.04rem;line-height:1.78}
+.story p{max-width:64ch;text-wrap:pretty}
+.story strong{color:var(--text);font-weight:650}
+.now{padding:clamp(1.25rem,3vw,1.75rem);display:grid;gap:.25rem;align-content:start}
+.now h3{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--text-3);padding-bottom:.6rem}
+.now li{display:flex;gap:.9rem;align-items:center;padding:.8rem 0;border-top:1px solid var(--line)}
+.now li i{display:grid;place-items:center;flex:none;width:2.4rem;height:2.4rem;border-radius:11px;background:var(--accent-soft);color:var(--accent-text)}
+.now li i svg{width:1.15rem;height:1.15rem}
+.now li div{display:grid;min-width:0}
+.now li span{font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.now li b{font-size:.95rem;font-weight:700;line-height:1.4}
 
-/* journey timeline */
-.timeline{position:relative;display:grid;gap:1rem;padding-left:2.6rem}
-.timeline::before{
-  content:"";position:absolute;left:.7rem;top:.5rem;bottom:.5rem;width:2px;border-radius:2px;
-  background:linear-gradient(180deg,var(--accent-hi),rgba(79,157,255,.5) 60%,transparent);
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:.45rem}
+.filters button{
+  padding:.5rem .95rem;border-radius:999px;cursor:pointer;
+  font-size:.82rem;font-weight:600;color:var(--text-2);background:var(--chip);border:1px solid var(--line);
+  transition:background-color .2s,color .2s,border-color .2s;
 }
-.step{position:relative;padding:1.2rem 1.4rem;display:grid;gap:.55rem}
-.step::before{
-  content:"";position:absolute;left:calc(-2.6rem + .7rem - 6px);top:1.45rem;
-  width:14px;height:14px;border-radius:50%;
-  background:var(--bg);border:2px solid var(--text);
-  box-shadow:0 0 0 4px rgba(7,8,15,.9);
+.filters button:hover{color:var(--text);border-color:var(--line-2)}
+.filters button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--white)}
+.filters button small{opacity:.7;font-weight:700;margin-left:.3rem}
+.bento{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem;grid-auto-flow:dense}
+.proj{
+  --h:258;
+  display:grid;grid-template-rows:auto 1fr;overflow:hidden;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
 }
-.step--next::before{border-color:var(--ok);background:var(--ok);box-shadow:0 0 0 4px rgba(7,8,15,.9),0 0 14px var(--ok)}
-.step .date{justify-self:start}
-.step h3{display:flex;align-items:center;gap:.6rem;font-size:1.08rem;font-weight:700;line-height:1.35}
-.step p{color:var(--text-2);font-size:.95rem;max-width:72ch}
+.proj:hover{transform:translateY(-3px);border-color:hsla(var(--h),90%,75%,.35);box-shadow:inset 0 1px 0 var(--glass-top),0 30px 60px -30px hsla(var(--h),90%,55%,.45)}
+.proj--wide{grid-column:span 2;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);grid-template-rows:none}
+.cover{
+  position:relative;min-height:11rem;display:grid;place-items:center;overflow:hidden;
+  color:hsl(var(--h) 90% 76%);
+  background:
+    radial-gradient(90% 90% at 15% 0%,hsla(var(--h),90%,62%,.38),transparent 60%),
+    radial-gradient(70% 80% at 100% 100%,hsla(calc(var(--h) + 40),90%,60%,.18),transparent 60%),
+    linear-gradient(160deg,hsla(var(--h),50%,22%,.55),rgba(6,7,14,.85));
+  border-bottom:1px solid var(--line);
+}
+.proj--wide .cover{border-bottom:0;border-right:1px solid var(--line);min-height:100%}
+.cover svg{width:100%;height:100%;max-height:13rem;padding:.75rem}
+.cover::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1.2px);background-size:14px 14px;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000,transparent);mask-image:linear-gradient(180deg,#000,transparent)}
+.cv-cap,.cv-sm,.cv-axis text{font-family:var(--mono);fill:var(--text-2)}
+.cv-cap{font-size:10px;letter-spacing:.06em}
+.cv-sm{font-size:10px}
+.cv-axis text{font-size:9px;fill:var(--text-3)}
+.cv-grid line{stroke:rgba(255,255,255,.1);stroke-width:1;stroke-dasharray:2 3}
+.cv-val{font-family:var(--font);font-weight:800;font-size:15px;fill:var(--text)}
+.cv-fill{fill:currentColor}
+.cv-dim{fill:currentColor;opacity:.45}
+.cv-line{fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.cv-soft{fill:none;stroke:currentColor;stroke-width:1.5;opacity:.45}
+.cv-box{fill:rgba(255,255,255,.05);stroke:currentColor;stroke-width:1.25}
+.cv-txt{font-family:var(--mono);font-size:10px;fill:var(--text)}
+.cv-scan{fill:none;stroke:var(--white);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:46 480;animation:scan 3.2s linear infinite;filter:drop-shadow(0 0 4px currentColor)}
+@keyframes scan{from{stroke-dashoffset:526}to{stroke-dashoffset:0}}
+.cover-code{
+  margin:0;width:calc(100% - 1.75rem);padding:1rem 1.1rem;border-radius:12px;
+  background:rgba(4,5,11,.75);border:1px solid var(--line);
+  font-family:var(--mono);font-size:.74rem;line-height:1.8;color:var(--text-2);overflow-x:auto;white-space:pre;
+}
+.cover-code .p{color:hsl(var(--h) 90% 76%)}
+.cover-code .s{color:var(--ok)}
+.proj__body{padding:clamp(1.15rem,2.6vw,1.6rem);display:grid;gap:.75rem;align-content:start;min-width:0}
+.proj__meta{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap}
+.proj__meta .kicker{color:hsl(var(--h) 90% 78%)}
+.proj__when{font-size:.74rem;font-weight:600;color:var(--text-3);white-space:nowrap}
+.proj h3{font-size:clamp(1.15rem,1rem + .5vw,1.4rem);font-weight:800;letter-spacing:-.02em;line-height:1.25}
+.proj p{color:var(--text-2);font-size:.94rem;text-wrap:pretty}
+.facts{display:flex;flex-wrap:wrap;gap:.45rem 1.1rem}
+.facts li{font-size:.8rem;color:var(--text-2)}
+.facts b{color:var(--text);font-weight:800;font-size:.95rem;margin-right:.2rem}
+.links{display:flex;flex-wrap:wrap;gap:.5rem;padding-top:.15rem}
+.links a{display:inline-flex;align-items:center;gap:.4rem;font-size:.8rem;font-weight:700;text-decoration:none;color:var(--text);padding:.42rem .8rem;border-radius:999px;border:1px solid var(--line-2);background:var(--chip)}
+.links a:hover{border-color:hsla(var(--h),90%,75%,.6);color:hsl(var(--h) 90% 82%)}
 
 /* experience */
-.jobs{display:grid;gap:1.1rem}
-.job{padding:clamp(1.25rem,3.2vw,2rem);display:grid;gap:.85rem}
-.job__top{display:flex;justify-content:space-between;gap:1rem}
-.job__title{display:grid;gap:.15rem;min-width:0}
-.job h3{font-size:clamp(1.15rem,1rem + .5vw,1.35rem);font-weight:800;letter-spacing:-.02em;line-height:1.3}
-.job__org{font-size:.92rem;font-weight:600;color:var(--accent-text)}
-.job p{color:var(--text-2);max-width:76ch}
-.ticks{display:grid;gap:.55rem;color:var(--text-2)}
-.ticks li{position:relative;padding-left:1.25rem;max-width:80ch}
-.ticks li::before{content:"";position:absolute;left:0;top:.68em;width:.42rem;height:.42rem;border-radius:2px;background:var(--accent-text);transform:rotate(45deg)}
-.ticks strong{color:var(--text);font-weight:700}
+.rail{padding:clamp(1.1rem,3vw,2rem);display:grid}
+.xp{position:relative;display:grid;grid-template-columns:3rem minmax(0,1fr);gap:0 1.25rem;padding-bottom:2rem}
+.xp:last-child{padding-bottom:0}
+.xp::before{content:"";position:absolute;left:1.5rem;top:3.4rem;bottom:.4rem;width:2px;margin-left:-1px;background:linear-gradient(var(--line-2),transparent)}
+.xp:last-child::before{display:none}
+.logo{
+  --h:258;display:grid;place-items:center;flex:none;width:3rem;height:3rem;border-radius:14px;
+  font-size:.85rem;font-weight:800;letter-spacing:-.02em;color:var(--white);
+  background:linear-gradient(140deg,hsl(var(--h) 80% 62%),hsl(calc(var(--h) + 40) 80% 48%));
+  box-shadow:0 10px 24px -12px hsl(var(--h) 80% 55%);
+}
+.xp__body{display:grid;gap:.65rem;min-width:0;padding-top:.15rem}
+.xp__top{display:flex;justify-content:space-between;gap:.5rem 1rem;flex-wrap:wrap}
+.xp__top div{display:grid;gap:.1rem;min-width:0}
+.xp h3{font-size:clamp(1.08rem,1rem + .4vw,1.25rem);font-weight:800;letter-spacing:-.015em;line-height:1.3}
+.xp__org{font-size:.9rem;font-weight:600;color:var(--accent-text)}
+.ticks{display:grid;gap:.5rem;color:var(--text-2);font-size:.95rem}
+.ticks li{position:relative;padding-left:1.2rem;max-width:84ch}
+.ticks li::before{content:"";position:absolute;left:.1rem;top:.7em;width:.4rem;height:.4rem;border-radius:2px;background:var(--accent-text);transform:rotate(45deg)}
+.ticks strong{color:var(--text);font-weight:750}
+
+/* research */
+.research{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1.1rem}
+.paper{padding:clamp(1.4rem,3.5vw,2.25rem);display:grid;gap:1rem;align-content:start;position:relative;overflow:hidden}
+.paper::before{content:"";position:absolute;right:-4rem;top:-4rem;width:16rem;height:16rem;border-radius:50%;background:radial-gradient(circle,rgba(245,184,75,.22),transparent 65%);pointer-events:none}
+.paper__top{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+.paper__icon{display:grid;place-items:center;flex:none;width:3.2rem;height:3.2rem;border-radius:16px;background:linear-gradient(140deg,#F5B84B,#EE7A2F);color:#1A1205}
+.paper__icon svg{width:1.6rem;height:1.6rem}
+.paper h3{font-size:clamp(1.35rem,1.05rem + 1vw,1.8rem);font-weight:800;letter-spacing:-.025em;line-height:1.2;text-wrap:balance}
+.paper p{color:var(--text-2);max-width:62ch}
+.cite{font-family:var(--mono);font-size:.78rem;line-height:1.7;color:var(--text-2);padding:1rem 1.1rem;border-radius:var(--r-md);background:var(--well);border:1px solid var(--line);overflow-wrap:anywhere}
+.cite mark{background:none;color:var(--text);font-weight:700}
+.patents{display:grid;gap:1.1rem;align-content:start}
+.patent{padding:1.35rem 1.5rem;display:grid;gap:.5rem}
+.patent__top{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap}
+.status{display:inline-flex;align-items:center;gap:.45rem;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .7rem;border-radius:999px}
+.status::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:currentColor}
+.status--ok{color:var(--ok);background:rgba(61,220,132,.12);border:1px solid rgba(61,220,132,.3)}
+.status--pub{color:var(--warn);background:rgba(245,184,75,.12);border:1px solid rgba(245,184,75,.3)}
+.patent h3{font-size:1.15rem;font-weight:800;letter-spacing:-.015em;line-height:1.3}
+.patent p{font-family:var(--mono);font-size:.78rem;color:var(--text-3)}
 
 /* skills */
 .skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}
-.skill{padding:1.4rem 1.5rem;display:grid;gap:.9rem;align-content:start}
-.skill__head{display:grid;gap:.1rem}
-.skill h3{font-size:1.08rem;font-weight:800;letter-spacing:-.01em}
-.skill__note{font-family:var(--mono);font-size:.72rem;color:var(--accent-text)}
+.skill{padding:1.35rem 1.45rem;display:grid;gap:.95rem;align-content:start}
+.skill__head{display:flex;align-items:center;gap:.8rem}
+.skill__head i{display:grid;place-items:center;flex:none;width:2.4rem;height:2.4rem;border-radius:11px;background:var(--accent-soft);color:var(--accent-text)}
+.skill__head i svg{width:1.15rem;height:1.15rem}
+.skill__head div{display:grid}
+.skill h3{font-size:1.05rem;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+.skill__head span{font-size:.72rem;color:var(--text-3);font-weight:600}
 
-/* certifications */
-.certs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1.1rem}
-.cert{grid-column:span 2;padding:1.3rem 1.4rem;display:grid;gap:.85rem;align-content:start}
-.cert:nth-child(n+4){grid-column:span 3}
-.cert__issuer{display:flex;align-items:center;gap:.75rem}
-.avatar{
-  display:grid;place-items:center;flex:none;width:2.5rem;height:2.5rem;border-radius:50%;
-  font-weight:800;font-size:.95rem;color:var(--white);
-  background:linear-gradient(140deg,var(--accent-hi),var(--blue));
-}
-.cert__issuer div{display:grid;line-height:1.3}
-.cert__issuer b{font-size:.92rem}
-.cert__issuer span{font-size:.75rem;color:var(--text-3)}
-.cert h3{font-size:1.02rem;font-weight:700;line-height:1.4}
+/* education */
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem}
+.school{padding:clamp(1.3rem,3vw,1.85rem);display:grid;gap:.9rem;align-content:start}
+.school__top{display:flex;gap:1rem;align-items:flex-start}
+.school__top div{display:grid;gap:.15rem;min-width:0}
+.school h3{font-size:1.15rem;font-weight:800;letter-spacing:-.015em;line-height:1.3}
+.school__deg{color:var(--text-2);font-size:.95rem}
+.school__row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.gpa{display:inline-flex;align-items:baseline;gap:.35rem;padding:.35rem .8rem;border-radius:999px;background:rgba(61,220,132,.1);border:1px solid rgba(61,220,132,.28);color:var(--ok);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.gpa b{font-size:.95rem;letter-spacing:0;color:var(--text)}
+.school h4{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.certs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
+.cert{display:flex;gap:.8rem;align-items:center;padding:.9rem 1rem;border-radius:var(--r-md)}
+.cert .logo{width:2.4rem;height:2.4rem;border-radius:50%;font-size:.8rem}
+.cert div{display:grid;min-width:0}
+.cert b{font-size:.88rem;line-height:1.35}
+.cert span{font-size:.72rem;color:var(--text-3)}
 
 /* contact */
-.contact{border-radius:var(--r-xl);padding:clamp(1.5rem,4vw,2.75rem);display:grid;gap:clamp(1.5rem,4vw,2.25rem)}
-.contact__grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.contact{border-radius:var(--r-xl);padding:clamp(1.5rem,4vw,2.75rem);display:grid;gap:clamp(1.5rem,4vw,2.25rem);position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;left:-6rem;bottom:-8rem;width:22rem;height:22rem;border-radius:50%;background:radial-gradient(circle,var(--aura-1),transparent 65%);pointer-events:none}
+.contact__grid{position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3rem);align-items:start}
 .contact__lead{display:grid;gap:1rem}
-.contact__lead h3{font-size:clamp(1.4rem,1rem + 1.4vw,1.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.2;text-wrap:balance}
-.contact__lead p{color:var(--text-2);max-width:50ch}
+.contact__lead h3{font-size:clamp(1.5rem,1rem + 1.6vw,2.1rem);font-weight:800;letter-spacing:-.03em;line-height:1.15;text-wrap:balance}
+.contact__lead p{color:var(--text-2);max-width:48ch}
 .rows{display:grid;gap:.6rem}
-.row{
-  display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.75rem;
-  padding:.85rem 1rem;border-radius:var(--r-md);background:var(--well);border:1px solid var(--line);
-  text-decoration:none;transition:border-color .2s,background-color .2s;
-}
-a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.75rem;padding:.85rem 1rem;border-radius:var(--r-md);background:var(--well);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,background-color .2s}
+a.row:hover{border-color:rgba(179,168,255,.45);background:rgba(106,85,245,.09)}
 .row div{display:grid;min-width:0}
 .row span{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
 .row b{font-size:.95rem;font-weight:600;overflow-wrap:anywhere}
 .row i{font-style:normal;color:var(--accent-text);font-weight:700}
-.row .copy{
-  padding:.4rem .75rem;border-radius:999px;cursor:pointer;
-  font-size:.72rem;font-weight:700;color:var(--text);background:var(--chip);border:1px solid var(--line-2);
-}
-.row .copy:hover{border-color:var(--accent-text);color:var(--accent-text)}
-
-.term{border-radius:var(--r-md);background:var(--term);border:1px solid var(--line);overflow:hidden}
+.copy{padding:.42rem .8rem;border-radius:999px;cursor:pointer;font-size:.74rem;font-weight:700;color:var(--text);background:var(--chip);border:1px solid var(--line-2)}
+.copy:hover{border-color:var(--accent-text);color:var(--accent-text)}
+.term{position:relative;border-radius:var(--r-md);background:var(--term);border:1px solid var(--line);overflow:hidden}
 .term__bar{display:flex;align-items:center;gap:.45rem;padding:.65rem .9rem;border-bottom:1px solid var(--line)}
-.term__bar i{width:.65rem;height:.65rem;border-radius:50%;background:var(--line-2)}
+.term__bar i{width:.65rem;height:.65rem;border-radius:50%}
 .term__bar i:nth-child(1){background:#FF5F57}
 .term__bar i:nth-child(2){background:#FEBC2E}
 .term__bar i:nth-child(3){background:#28C840}
 .term__bar span{margin-left:.5rem;font-family:var(--mono);font-size:.7rem;color:var(--text-3)}
-.term__body{padding:1rem 1.1rem 1.15rem;font-family:var(--mono);font-size:.78rem;line-height:1.85;overflow-x:auto;white-space:pre}
+.term__body{margin:0;padding:1rem 1.1rem 1.15rem;font-family:var(--mono);font-size:.78rem;line-height:1.85;color:var(--text-2);overflow-x:auto;white-space:pre}
 .term__body .t{color:var(--text-3)}
 .term__body .k{color:var(--accent-text)}
 .term__body .ok{color:var(--ok)}
@@ -399,41 +403,48 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
 .footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem}
 .footer p{font-size:.85rem;color:var(--text-3)}
 .socials{display:flex;gap:.5rem}
-.socials a{
-  display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;
-  background:var(--chip);border:1px solid var(--line-2);color:var(--text-2);text-decoration:none;
-  font-size:.8rem;font-weight:800;
-}
+.socials a{display:grid;place-items:center;width:2.4rem;height:2.4rem;border-radius:50%;background:var(--chip);border:1px solid var(--line-2);color:var(--text-2);text-decoration:none;font-weight:800}
 .socials a:hover{color:var(--text);border-color:var(--accent-text)}
 .socials svg{width:1rem;height:1rem}
 
 /* ---------- responsive ---------- */
 @media (max-width:64rem){
   .hero__grid{grid-template-columns:minmax(0,1fr)}
-  .photo-card{max-width:20rem;margin-top:0}
+  .portrait{max-width:21rem}
+  .kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .kpi{border-bottom:1px solid var(--line)}
+  .kpi:nth-child(3){border-right:0}
+  .kpi:nth-child(n+4){border-bottom:0}
+  .kpi:nth-child(5){grid-column:span 2}
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr))}
   .skills{grid-template-columns:repeat(2,minmax(0,1fr))}
   .certs{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .cert,.cert:nth-child(n+4){grid-column:auto}
   .cert:last-child{grid-column:1 / -1}
 }
 @media (max-width:52rem){
-  .bento,.about,.contact__grid{grid-template-columns:minmax(0,1fr)}
-  .feature{grid-row:auto}
+  .about,.research,.contact__grid,.edu{grid-template-columns:minmax(0,1fr)}
+  .proj--wide{grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr}
+  .proj--wide .cover{border-right:0;border-bottom:1px solid var(--line);min-height:11rem}
 }
 @media (max-width:40rem){
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1.25rem}
-  .metrics{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1rem}
-  .project__top,.job__top{flex-direction:column;gap:.6rem}
-  .skills,.certs{grid-template-columns:minmax(0,1fr)}
-  .cert:last-child{grid-column:auto}
-  .timeline{padding-left:1.9rem}
-  .timeline::before{left:.45rem}
-  .step{padding:1.1rem 1.15rem}
-  .step::before{left:calc(-1.9rem + .45rem - 6px)}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi,.kpi:nth-child(3){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .kpi:nth-child(2n){border-right:0}
+  .kpi:nth-child(5){grid-column:1 / -1;border-bottom:0;border-right:0}
+  .bento,.skills,.certs{grid-template-columns:minmax(0,1fr)}
+  .proj--wide,.cert:last-child{grid-column:auto}
+  .float--a{left:-.5rem;top:.9rem}
+  .float--b{right:-.5rem;bottom:3.6rem}
+  .xp{grid-template-columns:2.5rem minmax(0,1fr);gap:0 .9rem}
+  .xp::before{left:1.25rem;top:2.9rem}
+  .xp .logo{width:2.5rem;height:2.5rem;border-radius:12px;font-size:.75rem}
+  .xp__top{flex-direction:column}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .aura,.dot,.caret{animation:none}
+  .aura,.dot,.caret,.float,.ticker__track,.cv-scan{animation:none}
+  .ticker__track{flex-wrap:wrap;width:auto}
+  .ticker__track [aria-hidden="true"]{display:none}
   *{transition:none!important}
 }
 </style>
@@ -446,16 +457,16 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <div class="aura aura--3"></div>
   <canvas id="circuit"></canvas>
 </div>
+<div class="nav-fade" aria-hidden="true"></div>
 
 <nav class="nav" aria-label="Sections">
   <ul>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#research">Research</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#journey">Journey</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
     <li><a href="#skills">Skills</a></li>
-    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -465,47 +476,108 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="top" aria-labelledby="name">
-    <div class="wrap hero__grid">
-      <div class="glass hero__card">
-        <p class="pill"><span class="dot" aria-hidden="true"></span>Open to co-op · internship · full-time</p>
-        <p class="hi">hi, I'm</p>
-        <h1 id="name"><span>Vaishnavi</span><span class="grad">Rathi</span></h1>
-        <p class="role" aria-label="Embedded systems engineer, IoT builder, low-power firmware developer, hardware researcher"><span id="typed" aria-hidden="true">embedded systems engineer</span><span class="caret" aria-hidden="true"></span></p>
-        <p class="intro">I build low-power embedded and IoT systems: <strong>interrupt-driven firmware on ESP32 and STM32</strong>, sensor pipelines that stream to the cloud over MQTT, and a <strong>solar-powered wearable that tracks UV exposure</strong>. Now doing my MS in Electrical &amp; Computer Engineering at Northeastern.</p>
-        <div class="actions">
-          <a class="btn btn--primary" href="#projects">View projects <span aria-hidden="true">↗</span></a>
-          <a class="btn" href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4z"/></svg>
-            LinkedIn
-          </a>
-          <a class="btn" href="#contact">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            Contact
-          </a>
+    <div class="wrap">
+      <div class="hero__grid">
+        <div class="glass hero__card">
+          <p class="pill"><span class="dot" aria-hidden="true"></span>Seeking Spring 2027 co-op · Firmware &amp; embedded</p>
+          <p class="hi">hi, I'm</p>
+          <h1 id="name"><span>Vaishnavi</span><span class="grad">Rathi</span></h1>
+          <p class="role" aria-label="Embedded firmware engineer, IoT systems builder, TinyML developer, GPU performance profiler">
+            <b aria-hidden="true">&gt;</b> <span id="typed" aria-hidden="true">embedded firmware engineer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="intro">I write <strong>C for STM32 and ESP32</strong>, move data over I²C, SPI and UART, and debug with JTAG, a scope and a logic analyzer. MS in Electrical &amp; Computer Engineering at <strong>Northeastern</strong>, Springer-published, with two patents.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="#projects">View projects <span aria-hidden="true">↗</span></a>
+            <a class="btn" href="https://github.com/vaishnavirathi456-coder" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn" href="#contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Contact
+            </a>
+          </div>
         </div>
-        <div class="stats">
-          <div class="stat"><b>+30%</b><span>Energy efficiency</span><small>Firmware · MaprGo</small></div>
-          <div class="stat"><b>+25%</b><span>Measurement accuracy</span><small>On-device filtering</small></div>
-          <div class="stat"><b>4</b><span>Internships</span><small>Research + industry</small></div>
-          <div class="stat"><b>1</b><span>Springer paper</span><small>CIS 2025</small></div>
+
+        <div class="portrait">
+          <figure class="glass portrait__card">
+            <div class="portrait__frame">
+              <div class="monogram" aria-hidden="true">VR</div>
+              <img class="photo" id="photo" src="photo.jpg" alt="Portrait of Vaishnavi Rathi" width="1024" height="1280" fetchpriority="high" decoding="async">
+              <span class="portrait__loc">BOSTON, MA</span>
+            </div>
+          </figure>
+          <div class="float float--a" aria-hidden="true">
+            <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></i>
+            <div><b>MS ECE · 3.852</b><span>Northeastern</span></div>
+          </div>
+          <div class="float float--b" aria-hidden="true">
+            <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12l4 4v12H4z"/><path d="M8 12h8M8 16h5"/></svg></i>
+            <div><b>Springer author</b><span>CIS 2025</span></div>
+          </div>
         </div>
       </div>
 
-      <figure class="glass photo-card">
-        <div class="photo-frame">
-          <svg class="board" viewBox="0 0 320 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <path d="M0 70 H90 L120 100 H210"/><circle cx="214" cy="100" r="4"/>
-            <path d="M320 140 H250 L220 170 V230"/><circle cx="220" cy="234" r="4"/>
-            <path d="M0 300 H60 L100 260 H150"/><circle cx="154" cy="260" r="4"/>
-            <path d="M40 0 V40 L70 70"/><path d="M280 0 V60 L250 90 H230"/>
-            <path d="M320 330 H240 L210 360 V400"/><path d="M90 400 V350 L120 320 H180"/><circle cx="184" cy="320" r="4"/>
-            <rect class="pad" x="128" y="150" width="64" height="64" rx="6" opacity=".35"/>
-          </svg>
-          <div class="monogram" aria-hidden="true">VR</div>
-          <img class="photo" id="photo" src="photo.jpg" alt="Portrait of Vaishnavi Rathi" width="1024" height="1280" fetchpriority="high" decoding="async">
-          <span class="photo-loc">BOSTON, MA</span>
+      <div class="glass kpis" role="list" aria-label="Highlights">
+        <div class="kpi" role="listitem"><b>920×</b><span>GPU speedup</span><small>CUDA kernels on NVIDIA P100</small></div>
+        <div class="kpi" role="listitem"><b>97.5%</b><span>F1 score</span><small>TinyML ECG classifier</small></div>
+        <div class="kpi" role="listitem"><b>+30%</b><span>Energy efficiency</span><small>STM32 power management</small></div>
+        <div class="kpi" role="listitem"><b>2</b><span>Patents</span><small>1 granted, 1 published</small></div>
+        <div class="kpi" role="listitem"><b>3.852</b><span>GPA</span><small>MS ECE, Northeastern</small></div>
+      </div>
+
+      <div class="ticker" aria-label="Tools and technologies">
+        <div class="ticker__track">
+          <span>STM32</span><span>ESP32</span><span>Arduino</span><span>Raspberry Pi</span><span>Embedded C</span><span>C++</span><span>Python</span><span>UART</span><span>SPI</span><span>I²C</span><span>CAN</span><span>PWM</span><span>ADC</span><span>JTAG</span><span>Logic analyzers</span><span>Oscilloscopes</span><span>BLE</span><span>MQTT</span><span>CUDA</span><span>OpenMP</span><span>PyTorch</span><span>TensorFlow Lite</span><span>AWS</span><span>Git</span>
+          <span aria-hidden="true">STM32</span><span aria-hidden="true">ESP32</span><span aria-hidden="true">Arduino</span><span aria-hidden="true">Raspberry Pi</span><span aria-hidden="true">Embedded C</span><span aria-hidden="true">C++</span><span aria-hidden="true">Python</span><span aria-hidden="true">UART</span><span aria-hidden="true">SPI</span><span aria-hidden="true">I²C</span><span aria-hidden="true">CAN</span><span aria-hidden="true">PWM</span><span aria-hidden="true">ADC</span><span aria-hidden="true">JTAG</span><span aria-hidden="true">Logic analyzers</span><span aria-hidden="true">Oscilloscopes</span><span aria-hidden="true">BLE</span><span aria-hidden="true">MQTT</span><span aria-hidden="true">CUDA</span><span aria-hidden="true">OpenMP</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">TensorFlow Lite</span><span aria-hidden="true">AWS</span><span aria-hidden="true">Git</span>
         </div>
-      </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="sec" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <div>
+          <p class="sec-label">01 · About</p>
+          <h2 id="about-title">Close to the <span class="grad">hardware</span></h2>
+        </div>
+      </header>
+
+      <div class="about">
+        <div class="glass story">
+          <p>I'm an embedded firmware engineer and an MS student in <strong>Electrical and Computer Engineering at Northeastern University</strong>, concentrating in Computer Systems and Software. Most of my work lives where code meets circuits: C and Python on microcontrollers, sensors on I²C, SPI and UART, and debugging with JTAG, oscilloscopes and logic analyzers.</p>
+          <p>Before Boston, I studied Electronics Engineering at Shri Ramdeobaba College of Engineering and Management in Nagpur. In a four-person research team I wrote the STM32 firmware for a <strong>solar-powered UV-tracking wearable</strong> that became a Springer publication. At MaprGo I built IoT devices whose firmware improved <strong>sensor accuracy by 25% and energy efficiency by 30%</strong>. I'm also a named inventor on two patents.</p>
+          <p>At Northeastern I've pushed CUDA kernels to a <strong>920× speedup</strong>, published an open-source hardware-testing library on PyPI, and I now mentor undergraduates as a graduate TA in the embedded systems lab.</p>
+        </div>
+
+        <div class="glass now">
+          <h3>Right now</h3>
+          <ul>
+            <li>
+              <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></i>
+              <div><span>Studying</span><b>MS ECE @ Northeastern · GPA 3.852</b></div>
+            </li>
+            <li>
+              <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></i>
+              <div><span>Teaching</span><b>Graduate TA, embedded systems lab</b></div>
+            </li>
+            <li>
+              <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></i>
+              <div><span>Seeking</span><b>Spring 2027 firmware / embedded co-op</b></div>
+            </li>
+            <li>
+              <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i>
+              <div><span>Based in</span><b>Boston, Massachusetts</b></div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -513,82 +585,316 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <section class="sec" id="projects" aria-labelledby="projects-title">
     <div class="wrap">
       <header class="sec-head">
-        <p class="sec-label">Projects · 01</p>
-        <h2 id="projects-title">Things I've <span class="grad">built</span></h2>
-        <p class="sec-sub">Embedded hardware, IoT data pipelines and the software around them.</p>
+        <div>
+          <p class="sec-label">02 · Projects</p>
+          <h2 id="projects-title">Things I've <span class="grad">built</span></h2>
+          <p class="sec-sub">Firmware, IoT devices, TinyML and GPU performance work, from coursework to open source.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" data-filter="all" aria-pressed="true">All<small>9</small></button>
+          <button type="button" data-filter="embedded" aria-pressed="false">Embedded<small>5</small></button>
+          <button type="button" data-filter="iot" aria-pressed="false">IoT<small>3</small></button>
+          <button type="button" data-filter="ml" aria-pressed="false">ML &amp; HPC<small>2</small></button>
+          <button type="button" data-filter="sw" aria-pressed="false">Software &amp; cloud<small>2</small></button>
+        </div>
       </header>
 
-      <div class="projects">
-        <article class="glass project">
-          <div class="project__top">
-            <div class="project__title">
-              <h3>Geospatial IoT Data Pipeline</h3>
-              <p class="project__kind">Embedded Systems &amp; IoT · MaprGo, Bengaluru</p>
-            </div>
-            <span class="date">Aug – Dec 2023</span>
+      <div class="bento" id="bento">
+
+        <!-- HPC -->
+        <article class="glass proj proj--wide" data-cat="ml" style="--h:212">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <text class="cv-cap" x="20" y="24">KERNEL SPEEDUP VS SERIAL · LOG SCALE</text>
+              <g class="cv-grid"><line x1="20" y1="36" x2="20" y2="126"/><line x1="113.3" y1="36" x2="113.3" y2="126"/><line x1="206.7" y1="36" x2="206.7" y2="126"/><line x1="300" y1="36" x2="300" y2="126"/></g>
+              <text class="cv-sm" x="20" y="52">OpenMP · CPU</text>
+              <rect class="cv-dim" x="20" y="58" width="117" height="14" rx="3"/>
+              <text class="cv-val" x="144" y="70">18×</text>
+              <text class="cv-sm" x="20" y="96">CUDA · NVIDIA P100</text>
+              <rect class="cv-fill" x="20" y="102" width="277" height="14" rx="3"/>
+              <text class="cv-val" x="297" y="95" text-anchor="end">920×</text>
+              <g class="cv-axis"><text x="20" y="142" text-anchor="middle">1×</text><text x="113.3" y="142" text-anchor="middle">10×</text><text x="206.7" y="142" text-anchor="middle">100×</text><text x="300" y="142" text-anchor="middle">1000×</text></g>
+            </svg>
           </div>
-          <p class="project__desc">IoT-enabled embedded systems on ESP32 and STM32 with GPS and multi-sensor modules, streaming real-time geospatial data to the cloud over Wi-Fi and MQTT. Interrupt-driven Embedded C firmware filters and validates every reading on the device, and firmware-level power management cuts energy use. Part of MaprGo's pipeline for geospatial intelligence and digital twin systems.</p>
-          <div class="metrics">
-            <div class="metric"><b>+25%</b><span>Accuracy</span></div>
-            <div class="metric"><b>+30%</b><span>Energy efficiency</span></div>
-            <div class="metric"><b>ESP32 · STM32</b><span>MCU</span></div>
-            <div class="metric"><b>MQTT</b><span>Transport</span></div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">HPC · EECE 5640</span><span class="proj__when">Apr 2026</span></div>
+            <h3>Parallel Computing Performance Study</h3>
+            <p>Parallelized 2D heat-flow simulation and Sobel edge detection with OpenMP on CPUs and custom CUDA kernels on an NVIDIA P100, then profiled with Linux perf and nvprof. Found 49% vs. 11% LLC cache-miss rates across workloads and ~87% of GPU runtime spent on PCIe transfers.</p>
+            <ul class="facts"><li><b>920×</b>GPU kernel</li><li><b>18×</b>CPU</li><li><b>96/100</b>Prof. David Kaeli</li></ul>
+            <ul class="tags"><li>CUDA</li><li>OpenMP</li><li>Linux perf</li><li>nvprof</li><li>SLURM</li></ul>
+            <div class="links"><a href="https://github.com/vaishnavirathi456-coder/eece5640-final-project" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
-          <ul class="tags"><li>ESP32</li><li>STM32</li><li>Embedded C</li><li>GPS</li><li>Wi-Fi</li><li>MQTT</li><li>Interrupts</li><li>Sleep modes</li><li>Duty cycling</li><li>Digital twins</li></ul>
         </article>
 
-        <article class="glass project" id="uv-wearable">
-          <div class="project__top">
-            <div class="project__title">
-              <h3>Solar-Powered UV Wearable</h3>
-              <p class="project__kind">Research · Shri Ramdeobaba College of Engineering and Management</p>
+        <!-- toggletest -->
+        <article class="glass proj" data-cat="embedded sw" style="--h:262">
+          <div class="cover">
+<pre class="cover-code" aria-hidden="true"><span class="p">$</span> pip install toggletest-hw
+<span class="s">Successfully installed toggletest-hw</span>
+<span class="p">&gt;&gt;&gt;</span> t = Toggle(hw, pin=2,
+...        debounce_ms=50)
+<span class="p">&gt;&gt;&gt;</span> t.monitor(duration=10.0)</pre>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">Open source · PyPI</span><span class="proj__when">May 2026</span></div>
+            <h3>toggletest-hw</h3>
+            <p>A Python library for automated GPIO and toggle-switch testing. One API drives Arduino over USB-serial, Raspberry Pi GPIO, or a mock backend for CI, with debouncing and event monitoring built in.</p>
+            <ul class="tags"><li>Python</li><li>Arduino</li><li>Raspberry Pi</li><li>pytest</li></ul>
+            <div class="links">
+              <a href="https://github.com/vaishnavirathi456-coder/toggletest" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://pypi.org/project/toggletest-hw/" target="_blank" rel="noopener">PyPI <span aria-hidden="true">↗</span></a>
             </div>
-            <span class="date">Aug 2023 – Jul 2024</span>
           </div>
-          <p class="project__desc">A wearable that monitors UV exposure in real time and runs without external charging. Embedded UV sensors feed a microcontroller-based system powered by solar energy harvesting, with optimized power management and precise sensor calibration for accurate readings as conditions change. Validated through experimental testing across varying sunlight intensities, then presented at CIS 2025.</p>
-          <div class="metrics">
-            <div class="metric"><b>Solar</b><span>Power source</span></div>
-            <div class="metric"><b>UV</b><span>Sensing</span></div>
-            <div class="metric"><b>12 mo</b><span>Research</span></div>
-            <div class="metric"><b>Springer</b><span>Published</span></div>
-          </div>
-          <ul class="tags"><li>UV sensors</li><li>Microcontroller</li><li>Solar harvesting</li><li>Power management</li><li>Sensor calibration</li><li>Experimental validation</li></ul>
         </article>
 
-        <article class="glass project">
-          <div class="project__top">
-            <div class="project__title">
-              <h3>Product Development &amp; Data Analytics</h3>
-              <p class="project__kind">Internship · Aerovania Pvt Ltd, Nagpur</p>
-            </div>
-            <span class="date">Jan – Jun 2025</span>
+        <!-- BLE -->
+        <article class="glass proj" data-cat="iot embedded" style="--h:188">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <circle class="cv-fill" cx="44" cy="80" r="5"/>
+              <path class="cv-soft" d="M58 64a22 22 0 0 1 0 32M68 54a36 36 0 0 1 0 52M78 44a50 50 0 0 1 0 72"/>
+              <text class="cv-sm" x="110" y="40">HR</text>
+              <path class="cv-line" d="M110 66 h30 l6 -18 l7 30 l6 -12 h30 l6 -18 l7 30 l6 -12 h30 l6 -18 l7 30 l6 -12 h20"/>
+              <text class="cv-sm" x="110" y="104">SpO₂</text>
+              <path class="cv-line" style="opacity:.6" d="M110 124 q18 -14 36 0 t36 0 t36 0 t36 0 t36 0"/>
+              <text class="cv-cap" x="20" y="150">ESP32 BLE → PYTHON DASHBOARD</text>
+            </svg>
           </div>
-          <p class="project__desc">Real-world product work spanning web-based application development and data handling, built in close collaboration with the team.</p>
-          <div class="metrics">
-            <div class="metric"><b>Web</b><span>Applications</span></div>
-            <div class="metric"><b>Data</b><span>Analytics</span></div>
-            <div class="metric"><b>Product</b><span>Development</span></div>
-            <div class="metric"><b>6 mo</b><span>Internship</span></div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">IoT · Health</span><span class="proj__when">2026</span></div>
+            <h3>BLE Health Monitor</h3>
+            <p>Real-time heart rate and SpO₂ monitoring: an ESP32 BLE server streams readings to a Python client with live plots and CSV logging. Runs on a MAX30102 sensor or simulated data, with toggletest-hw hardware tests.</p>
+            <ul class="tags"><li>ESP32</li><li>BLE</li><li>Python</li><li>MAX30102</li></ul>
+            <div class="links"><a href="https://github.com/vaishnavirathi456-coder/ble-health-monitor" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
           </div>
-          <ul class="tags"><li>Web apps</li><li>Data handling</li><li>Data analytics</li><li>Product development</li><li>Collaboration</li></ul>
         </article>
 
-        <article class="glass project">
-          <div class="project__top">
-            <div class="project__title">
-              <h3>Networking &amp; Cloud Labs</h3>
-              <p class="project__kind">Virtual Internship · AICTE NEAT</p>
+        <!-- ECG -->
+        <article class="glass proj proj--wide" data-cat="ml" style="--h:336">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <text class="cv-cap" x="16" y="24">MIT-BIH · 360 HZ · 180-SAMPLE BEATS</text>
+              <path class="cv-line" d="M0 98 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7"/>
+              <path class="cv-scan" d="M0 98 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7 h18 l4 -6 l4 6 h8 l3 8 l5 -60 l5 70 l4 -18 h10 q6 -14 12 0 h7"/>
+              <text class="cv-cap" x="16" y="146">NORMAL · ATRIAL · VENTRICULAR · LBBB</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">TinyML · Healthcare</span><span class="proj__when">Sep 2025</span></div>
+            <h3>ECG Arrhythmia Classification with TinyML</h3>
+            <p>An end-to-end 1D CNN pipeline trained in PyTorch on 21,550 heartbeats from the MIT-BIH Arrhythmia Database, then quantized to TensorFlow Lite for an edge target.</p>
+            <ul class="facts"><li><b>97.5%</b>F1, 4 classes</li><li><b>784 KB</b>74% smaller</li><li><b>0.75 ms</b>on simulated Raspberry Pi</li></ul>
+            <ul class="tags"><li>PyTorch</li><li>TensorFlow Lite</li><li>PhysioNet</li><li>Quantization</li></ul>
+            <div class="links"><a href="https://github.com/vaishnavirathi456-coder/ecg-arrhythmia-tinyml" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <!-- UV wearable -->
+        <article class="glass proj proj--wide" id="uv-wearable" data-cat="embedded" style="--h:40">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <circle class="cv-fill" cx="66" cy="76" r="20"/>
+              <path class="cv-line" d="M66 40v-10M66 122v-10M30 76h-10M112 76h-10M40.5 50.5l-7-7M98.5 108.5l-7-7M40.5 101.5l-7 7M98.5 43.5l-7 7"/>
+              <text class="cv-sm" x="136" y="58">UV INDEX</text>
+              <rect x="136" y="66" width="52" height="14" rx="3" fill="var(--uvi-1)"/>
+              <rect x="190" y="66" width="38" height="14" fill="var(--uvi-2)"/>
+              <rect x="230" y="66" width="24" height="14" fill="var(--uvi-3)"/>
+              <rect x="256" y="66" width="34" height="14" fill="var(--uvi-4)"/>
+              <rect x="292" y="66" width="18" height="14" rx="3" fill="var(--uvi-5)"/>
+              <g class="cv-axis"><text x="136" y="96">0</text><text x="310" y="96" text-anchor="end">11+</text></g>
+              <text class="cv-cap" x="136" y="124">STM32 · ADC · SPI / I²C</text>
+              <text class="cv-cap" x="136" y="140">SOLAR-POWERED · NO CHARGER</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">Research · Wearable</span><span class="proj__when">Aug 2023 – Oct 2024</span></div>
+            <h3>Solar-Powered Wearable for Tracking UV Exposure</h3>
+            <p>STM32 firmware in C for a solar-powered wearable with embedded UV sensors: ADC sampling, SPI/I²C sensor communication, interrupt-driven acquisition and sensor calibration, with threshold-based alerts for sun exposure. Validated under variable sunlight and published by Springer.</p>
+            <ul class="facts"><li><b>4</b>person team</li><li><b>CIS 2025</b>presented</li><li><b>Springer</b>LNNS vol. 1825</li></ul>
+            <ul class="tags"><li>STM32</li><li>Embedded C</li><li>ADC</li><li>SPI</li><li>I²C</li><li>Interrupts</li></ul>
+            <div class="links"><a href="https://doi.org/10.1007/978-3-032-18132-9_6" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+
+        <!-- IoT dashboard -->
+        <article class="glass proj" data-cat="iot" style="--h:168">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <rect class="cv-box" x="40" y="22" width="112" height="56" rx="8"/>
+              <rect class="cv-box" x="162" y="22" width="118" height="56" rx="8"/>
+              <rect class="cv-box" x="40" y="88" width="72" height="50" rx="8"/>
+              <rect class="cv-box" x="122" y="88" width="158" height="50" rx="8"/>
+              <rect class="cv-dim" x="52" y="36" width="54" height="7" rx="3"/><rect class="cv-fill" x="52" y="52" width="80" height="14" rx="3"/>
+              <path class="cv-line" d="M174 66 l18 -14 l16 8 l18 -18 l16 10 l24 -12"/>
+              <circle class="cv-soft" cx="76" cy="113" r="14"/><path class="cv-line" d="M76 113 l7 -8"/>
+              <rect class="cv-dim" x="136" y="120" width="12" height="10" rx="2"/><rect class="cv-dim" x="154" y="110" width="12" height="20" rx="2"/><rect class="cv-fill" x="172" y="100" width="12" height="30" rx="2"/><rect class="cv-dim" x="190" y="114" width="12" height="16" rx="2"/>
+              <text class="cv-cap" x="214" y="118">REST · JSON</text>
+              <text class="cv-cap" x="214" y="132">WI-FI</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">IoT · ESP32</span><span class="proj__when">Sep 2024 – Feb 2025</span></div>
+            <h3>Multi-Functionality IoT Dashboard</h3>
+            <p>An ESP32 smart dashboard in C++ that calls multiple REST APIs over Wi-Fi, parses the JSON and shows the combined real-time data on a single display.</p>
+            <ul class="tags"><li>ESP32</li><li>C++</li><li>Arduino IDE</li><li>REST APIs</li></ul>
+          </div>
+        </article>
+
+        <!-- Home automation -->
+        <article class="glass proj" data-cat="iot embedded" style="--h:282">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <text class="cv-cap" x="160" y="34" text-anchor="middle">HC-05 → UART → 4-CHANNEL RELAY</text>
+              <g>
+                <rect class="cv-fill" x="38" y="62" width="48" height="26" rx="13"/><circle cx="73" cy="75" r="9" fill="var(--white)"/>
+                <rect class="cv-box" x="102" y="62" width="48" height="26" rx="13"/><circle cx="115" cy="75" r="9" fill="var(--text-3)"/>
+                <rect class="cv-fill" x="166" y="62" width="48" height="26" rx="13"/><circle cx="201" cy="75" r="9" fill="var(--white)"/>
+                <rect class="cv-box" x="230" y="62" width="48" height="26" rx="13"/><circle cx="243" cy="75" r="9" fill="var(--text-3)"/>
+              </g>
+              <g class="cv-axis"><text x="62" y="110" text-anchor="middle">CH1</text><text x="126" y="110" text-anchor="middle">CH2</text><text x="190" y="110" text-anchor="middle">CH3</text><text x="254" y="110" text-anchor="middle">CH4</text></g>
+              <text class="cv-cap" x="160" y="140" text-anchor="middle">EMBEDDED C · ARDUINO</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">IoT · Bluetooth</span><span class="proj__when">Sep 2023 – Jan 2024</span></div>
+            <h3>Bluetooth Home Automation</h3>
+            <p>Embedded C firmware receives commands from an HC-05 module over UART and switches a 4-channel relay, giving wireless on/off control of up to four appliances at low cost.</p>
+            <ul class="tags"><li>Arduino</li><li>HC-05</li><li>UART</li><li>Relays</li></ul>
+          </div>
+        </article>
+
+        <!-- Robot -->
+        <article class="glass proj" data-cat="embedded" style="--h:14">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <rect class="cv-box" x="30" y="60" width="54" height="36" rx="7"/>
+              <circle class="cv-fill" cx="42" cy="102" r="7"/><circle class="cv-fill" cx="72" cy="102" r="7"/>
+              <circle cx="88" cy="70" r="4" fill="var(--text)"/><circle cx="88" cy="86" r="4" fill="var(--text)"/>
+              <path class="cv-soft" d="M100 62 q10 16 0 32M114 54 q16 24 0 48M128 46 q22 32 0 64"/>
+              <rect x="250" y="44" width="22" height="70" rx="3" fill="rgba(255,255,255,.08)" stroke="currentColor" stroke-width="1.25"/>
+              <path class="cv-soft" d="M92 128 H250 M92 122 v12 M250 122 v12"/>
+              <text class="cv-val" x="171" y="146" text-anchor="middle" style="font-size:12px">30 cm</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">Robotics</span><span class="proj__when">Aug 2022 – May 2023</span></div>
+            <h3>Obstacle Avoiding Robot</h3>
+            <p>An autonomous Arduino robot that uses ultrasonic sensing and Embedded C firmware to detect and steer around obstacles.</p>
+            <ul class="facts"><li><b>95%</b>detection within 30 cm</li></ul>
+            <ul class="tags"><li>Arduino</li><li>Ultrasonic</li><li>Embedded C</li></ul>
+          </div>
+        </article>
+
+        <!-- AWS -->
+        <article class="glass proj" data-cat="sw" style="--h:142">
+          <div class="cover">
+            <svg viewBox="0 0 320 160" aria-hidden="true">
+              <text class="cv-cap" x="160" y="44" text-anchor="middle">ETL · REAL-TIME ORDER TRACKING</text>
+              <rect class="cv-box" x="10" y="62" width="62" height="36" rx="7"/><text class="cv-txt" x="41" y="84" text-anchor="middle">S3</text>
+              <rect class="cv-box" x="90" y="62" width="62" height="36" rx="7"/><text class="cv-txt" x="121" y="84" text-anchor="middle">Lambda</text>
+              <rect class="cv-box" x="170" y="62" width="62" height="36" rx="7"/><text class="cv-txt" x="201" y="84" text-anchor="middle">DynamoDB</text>
+              <rect class="cv-fill" x="250" y="62" width="62" height="36" rx="7"/><text class="cv-txt" x="281" y="84" text-anchor="middle" style="fill:#06110A;font-weight:700">Redshift</text>
+              <path class="cv-line" d="M73 80 h15 M153 80 h15 M233 80 h15"/>
+              <text class="cv-cap" x="160" y="124" text-anchor="middle">DELAY MONITORING · REGIONAL SALES</text>
+            </svg>
+          </div>
+          <div class="proj__body">
+            <div class="proj__meta"><span class="kicker">Cloud · AWS</span><span class="proj__when">Sep 2024</span></div>
+            <h3>E-Commerce Order Tracking System</h3>
+            <p>A scalable order-tracking and analytics system on AWS, with ETL pipelines and real-time workflows that monitor order delays and analyze regional sales.</p>
+            <ul class="tags"><li>S3</li><li>Lambda</li><li>DynamoDB</li><li>Redshift</li><li>ETL</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="sec" id="experience" aria-labelledby="experience-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <div>
+          <p class="sec-label">03 · Experience</p>
+          <h2 id="experience-title">Where I've <span class="grad">worked</span></h2>
+          <p class="sec-sub">Teaching, research and industry roles since 2023.</p>
+        </div>
+      </header>
+
+      <div class="glass rail">
+        <article class="xp">
+          <span class="logo" style="--h:0" aria-hidden="true">NU</span>
+          <div class="xp__body">
+            <div class="xp__top">
+              <div><h3>Graduate Teaching Assistant</h3><p class="xp__org">Northeastern University · Embedded Systems &amp; Digital Electronics Lab · Boston, MA</p></div>
+              <span class="date">Sep 2026 – Present</span>
             </div>
-            <span class="date">Jul – Oct 2023</span>
+            <ul class="ticks">
+              <li>Mentor undergraduate computer engineering students in embedded systems and digital electronics labs, demonstrating circuit interfacing and seven-segment display design.</li>
+              <li>Diagnose hardware and firmware faults by reviewing failure modes and circuit behavior, teaching systematic root-cause debugging.</li>
+              <li>Assess embedded lab implementations and give technical feedback that improves circuit accuracy.</li>
+            </ul>
           </div>
-          <p class="project__desc">Hands-on virtual projects in cloud infrastructure and network configuration, covering networking fundamentals, cloud architecture, deployment strategies and troubleshooting.</p>
-          <div class="metrics">
-            <div class="metric"><b>Cloud</b><span>Architecture</span></div>
-            <div class="metric"><b>Network</b><span>Configuration</span></div>
-            <div class="metric"><b>Deploy</b><span>Strategy</span></div>
-            <div class="metric"><b>4 mo</b><span>Virtual</span></div>
+        </article>
+
+        <article class="xp">
+          <span class="logo" style="--h:200" aria-hidden="true">AV</span>
+          <div class="xp__body">
+            <div class="xp__top">
+              <div><h3>Intern, Product Development &amp; Data Analytics</h3><p class="xp__org">Aerovania Private Limited · Nagpur, India</p></div>
+              <span class="date">Jan 2025 – Jun 2025</span>
+            </div>
+            <ul class="ticks">
+              <li>Engineered a modular Python backend for an algorithmic trading system with the Dhan API and MongoDB, automating GTT orders and <strong>cutting manual intervention by 80%</strong>.</li>
+              <li>Deployed and optimized it into a scalable, production-ready platform for frontend, ML and multi-broker integration.</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>MongoDB</li><li>REST APIs</li></ul>
           </div>
-          <ul class="tags"><li>Networking</li><li>Cloud infrastructure</li><li>Deployment</li><li>Troubleshooting</li></ul>
+        </article>
+
+        <article class="xp">
+          <span class="logo" style="--h:262" aria-hidden="true">MG</span>
+          <div class="xp__body">
+            <div class="xp__top">
+              <div><h3>Intern, Electronic Hardware &amp; IoT</h3><p class="xp__org">MaprGo · Bengaluru, India</p></div>
+              <span class="date">Aug 2023 – Dec 2023</span>
+            </div>
+            <ul class="ticks">
+              <li>Designed IoT embedded devices in C on STM32 and Arduino, interfacing GPS and sensor modules over UART and I²C for real-time geospatial data collection.</li>
+              <li>Developed on-device sensor data-cleaning algorithms and debugged firmware via JTAG with oscilloscopes, logic analyzers and multimeters, <strong>improving accuracy by 25%</strong>.</li>
+              <li>Implemented PWM- and timer-based power management, <strong>improving energy efficiency by 30%</strong>; versioned firmware in Git.</li>
+              <li>Strengthened MaprGo's data acquisition pipeline for geospatial intelligence and digital twin development.</li>
+            </ul>
+            <ul class="tags"><li>STM32</li><li>Arduino</li><li>Embedded C</li><li>UART</li><li>I²C</li><li>JTAG</li><li>GPS</li></ul>
+          </div>
+        </article>
+
+        <article class="xp">
+          <span class="logo" style="--h:36" aria-hidden="true">RC</span>
+          <div class="xp__body">
+            <div class="xp__top">
+              <div><h3>Research Intern, Solar-Powered UV Wearable</h3><p class="xp__org">Shri Ramdeobaba College of Engineering and Management · Nagpur, India</p></div>
+              <span class="date">Aug 2023 – Oct 2024</span>
+            </div>
+            <ul class="ticks">
+              <li>Collaborated in a four-member team on STM32 firmware in C, using the ADC to digitize UV sensor readings and SPI/I²C for sensor communication.</li>
+              <li>Implemented interrupt-driven sampling and calibrated the sensors for energy-efficient, accurate real-time data acquisition.</li>
+              <li>Ran experiments under variable sunlight to validate reliability, and <strong>co-authored the Springer publication</strong>.</li>
+            </ul>
+            <ul class="tags"><li>STM32</li><li>ADC</li><li>SPI</li><li>I²C</li><li>Calibration</li></ul>
+          </div>
+        </article>
+
+        <article class="xp">
+          <span class="logo" style="--h:150" aria-hidden="true">AI</span>
+          <div class="xp__body">
+            <div class="xp__top">
+              <div><h3>Networking Cloud Virtual Intern</h3><p class="xp__org">AICTE NEAT · India (virtual)</p></div>
+              <span class="date">Jul 2023 – Oct 2023</span>
+            </div>
+            <ul class="ticks">
+              <li>Worked on virtual projects in cloud infrastructure, network configuration and troubleshooting, covering networking fundamentals and deployment strategies.</li>
+            </ul>
+          </div>
         </article>
       </div>
     </div>
@@ -598,254 +904,40 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <section class="sec" id="research" aria-labelledby="research-title">
     <div class="wrap">
       <header class="sec-head">
-        <p class="sec-label">Research · 02</p>
-        <h2 id="research-title">Research &amp; <span class="grad">recognition</span></h2>
-        <p class="sec-sub">Published work, patents and teaching.</p>
-      </header>
-
-      <div class="bento">
-        <article class="glass feature">
-          <div class="feature__top">
-            <span class="icon-tile" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-            </span>
-            <span class="feature__tag">Research · Springer proceedings</span>
-          </div>
-          <p class="eyebrow">Presented at CIS 2025</p>
-          <p class="feature__big grad">UV</p>
-          <h3>“Solar Powered Wearable Device for Tracking UV Exposure”</h3>
-          <p>Presented at the 6th Congress on Intelligent Systems (CIS 2025), organized by the Institution of Electronics and Telecommunication Engineers (IETE), Delhi Centre. The paper has been accepted for publication in a Springer conference proceeding.</p>
-          <div class="feature__stats">
-            <div><b>Solar</b><span>Self-powered</span></div>
-            <div><b>IETE</b><span>Delhi Centre</span></div>
-            <div><b>Springer</b><span>Proceedings</span></div>
-          </div>
-          <a class="link-arrow" href="#uv-wearable">See the build ↗</a>
-        </article>
-
-        <article class="glass mini">
-          <p class="mini__head"><span class="badge">PAT</span>Patents</p>
-          <b>Hardware innovation</b>
-          <p>Patents in hardware-focused product innovation.</p>
-        </article>
-        <article class="glass mini">
-          <p class="mini__head"><span class="badge">TA</span>Northeastern University</p>
-          <b>Robotics TA</b>
-          <p>Teaching Assistant for Embedded Design Enabling Robotics in the College of Engineering, since Sep 2026.</p>
-        </article>
-        <article class="glass mini">
-          <p class="mini__head"><span class="badge">FW</span>MaprGo</p>
-          <b>+30% efficiency</b>
-          <p>Firmware-level power management using sleep modes, duty cycling and peripheral optimization.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="sec" id="about" aria-labelledby="about-title">
-    <div class="wrap">
-      <header class="sec-head">
-        <p class="sec-label">About · 03</p>
-        <h2 id="about-title">About <span class="grad">me</span></h2>
-        <p class="sec-sub">Electronics engineer with a focus on embedded systems and IoT.</p>
-      </header>
-
-      <div class="about">
-        <div class="glass about__text">
-          <p>I'm an electronics engineer with a background in <strong>embedded systems and IoT</strong>. I completed my B.Tech in Electronics Engineering at Shri Ramdeobaba College of Engineering and Management in 2025, and I'm now doing my <strong>MS in Electrical and Computer Engineering at Northeastern University</strong> in Boston.</p>
-          <p>During my undergrad I worked across research and industry. At MaprGo I built ESP32 and STM32 systems that streamed GPS and sensor data to the cloud over MQTT. In the lab, I designed a solar-powered wearable that tracks UV exposure without external charging, and presented it at CIS 2025.</p>
-          <p class="callout">+30% energy efficiency and +25% measurement accuracy, both delivered in firmware.</p>
-          <p>I also hold patents in hardware-focused product innovation and work in Python (OOP), SQL and networking. This fall I'm a Teaching Assistant for Embedded Design Enabling Robotics, and I'm looking for co-op, internship and full-time roles in embedded systems, IoT and hardware.</p>
+        <div>
+          <p class="sec-label">04 · Research</p>
+          <h2 id="research-title">Publications &amp; <span class="grad">patents</span></h2>
+          <p class="sec-sub">Peer-reviewed research and two patents in hardware product design.</p>
         </div>
-
-        <ul class="facts">
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-            <div><span>Based in</span><b>Boston, Massachusetts</b></div>
-          </li>
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></span>
-            <div><span>Currently</span><b>MS ECE @ Northeastern</b></div>
-          </li>
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4"/></svg></span>
-            <div><span>Research</span><b>Solar-powered UV wearable</b></div>
-          </li>
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>
-            <div><span>Teaching</span><b>Embedded Design Enabling Robotics</b></div>
-          </li>
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
-            <div><span>Signature</span><b>Hardware + firmware</b></div>
-          </li>
-          <li class="glass fact">
-            <span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg></span>
-            <div><span>Looking for</span><b>Co-op · Internship · Full-time</b></div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== JOURNEY ===== -->
-  <section class="sec" id="journey" aria-labelledby="journey-title">
-    <div class="wrap">
-      <header class="sec-head">
-        <p class="sec-label">Journey · 04</p>
-        <h2 id="journey-title">How I got <span class="grad">here</span></h2>
-        <p class="sec-sub">From an electronics degree in Nagpur to an MS in Boston.</p>
       </header>
 
-      <ol class="timeline">
-        <li class="glass step">
-          <span class="date">2021</span>
-          <h3><span class="badge">BT</span>Started B.Tech in Electronics Engineering</h3>
-          <p>Shri Ramdeobaba College of Engineering and Management, Nagpur.</p>
-          <ul class="tags"><li>Electronics</li><li>SRCOEM</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Jul 2023</span>
-          <h3><span class="badge">NET</span>Networking &amp; cloud internship</h3>
-          <p>AICTE NEAT virtual internship covering networking fundamentals, cloud architecture and deployment.</p>
-          <ul class="tags"><li>Networking</li><li>Cloud</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Aug 2023</span>
-          <h3><span class="badge">IOT</span>Embedded systems &amp; IoT at MaprGo</h3>
-          <p>Built ESP32 and STM32 systems with GPS and sensors in Bengaluru, improving accuracy by 25% and energy efficiency by 30%.</p>
-          <ul class="tags"><li>Firmware</li><li>MQTT</li><li>GPS</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Aug 2023</span>
-          <h3><span class="badge">UV</span>Began the UV wearable research</h3>
-          <p>A year as a research intern designing, calibrating and testing a solar-powered UV exposure monitor.</p>
-          <ul class="tags"><li>Research</li><li>Solar</li><li>Sensors</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Jan 2025</span>
-          <h3><span class="badge">WEB</span>Product development at Aerovania</h3>
-          <p>Six months on web-based applications and data analytics for real-world products.</p>
-          <ul class="tags"><li>Web apps</li><li>Analytics</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">2025</span>
-          <h3><span class="badge">PUB</span>Presented at CIS 2025</h3>
-          <p>Presented the UV wearable at the 6th Congress on Intelligent Systems (IETE Delhi Centre). Accepted for Springer proceedings.</p>
-          <ul class="tags"><li>Springer</li><li>Conference</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">2025</span>
-          <h3><span class="badge">GRAD</span>Graduated with a B.Tech</h3>
-          <p>Completed the B.Tech in Electronics Engineering.</p>
-          <ul class="tags"><li>Electronics Engineering</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Jan 2026</span>
-          <h3><span class="badge">MS</span>Moved to Boston for my MS</h3>
-          <p>Started the MS in Electrical and Computer Engineering at Northeastern University.</p>
-          <ul class="tags"><li>Northeastern</li><li>MS ECE</li></ul>
-        </li>
-        <li class="glass step">
-          <span class="date">Sep 2026</span>
-          <h3><span class="badge">TA</span>Teaching Assistant, Embedded Design Enabling Robotics</h3>
-          <p>Supporting students in the College of Engineering's embedded design and robotics course.</p>
-          <ul class="tags"><li>Teaching</li><li>Robotics</li></ul>
-        </li>
-        <li class="glass step step--next">
-          <span class="date">Next</span>
-          <h3><span class="badge">NEXT</span>Co-op, internship or full-time role</h3>
-          <p>Looking for roles in embedded systems, IoT and hardware.</p>
-          <ul class="tags"><li>Embedded</li><li>IoT</li><li>Hardware</li></ul>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="sec" id="experience" aria-labelledby="experience-title">
-    <div class="wrap">
-      <header class="sec-head">
-        <p class="sec-label">Experience · 05</p>
-        <h2 id="experience-title">Work <span class="grad">experience</span></h2>
-        <p class="sec-sub">Research, industry and teaching roles since 2023.</p>
-      </header>
-
-      <div class="jobs">
-        <article class="glass job">
-          <div class="job__top">
-            <div class="job__title">
-              <h3>Teaching Assistant: Embedded Design Enabling Robotics</h3>
-              <p class="job__org">Northeastern University College of Engineering · Boston, MA</p>
-            </div>
-            <span class="date">Sep 2026 – Present</span>
+      <div class="research">
+        <article class="glass paper">
+          <div class="paper__top">
+            <span class="paper__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+            <span class="kicker">Springer · Lecture Notes in Networks and Systems, vol. 1825</span>
           </div>
-          <p>Supporting students in the Embedded Design Enabling Robotics course.</p>
+          <h3>Solar Powered Wearable Device for Tracking UV Exposure</h3>
+          <p>Presented at the Sixth Congress on Intelligent Systems (CIS 2025), organized by IETE Delhi Centre, and published in the Springer proceedings in 2026.</p>
+          <p class="cite" id="citation">Joshi, P.K., <mark>Rathi, V.</mark>, Soni, S., Shilna, K.V. (2026). Solar Powered Wearable Device for Tracking UV Exposure. In: Kumar, S., Shorif Uddin, M., Rawat, T.K. (eds) Sixth Congress on Intelligent Systems. CIS 2025. Lecture Notes in Networks and Systems, vol 1825. Springer, Cham. https://doi.org/10.1007/978-3-032-18132-9_6</p>
+          <div class="actions">
+            <a class="btn btn--primary btn--sm" href="https://doi.org/10.1007/978-3-032-18132-9_6" target="_blank" rel="noopener">Read on Springer <span aria-hidden="true">↗</span></a>
+            <button class="btn btn--sm" type="button" id="copy-cite">Copy citation</button>
+          </div>
         </article>
 
-        <article class="glass job">
-          <div class="job__top">
-            <div class="job__title">
-              <h3>Product Development and Data Analytics Intern</h3>
-              <p class="job__org">Aerovania Pvt Ltd · Nagpur</p>
-            </div>
-            <span class="date">Jan 2025 – Jun 2025</span>
-          </div>
-          <ul class="ticks">
-            <li>Worked on real-world projects involving web-based application development, data handling and team collaboration.</li>
-            <li>Gained practical industry exposure and strengthened problem-solving and professional skills.</li>
-          </ul>
-        </article>
-
-        <article class="glass job">
-          <div class="job__top">
-            <div class="job__title">
-              <h3>Research Intern</h3>
-              <p class="job__org">Shri Ramdeobaba College of Engineering and Management · Nagpur</p>
-            </div>
-            <span class="date">Aug 2023 – Jul 2024</span>
-          </div>
-          <ul class="ticks">
-            <li>Engineered a solar-powered wearable for real-time UV exposure monitoring, integrating embedded UV sensors with a microcontroller-based architecture.</li>
-            <li>Used solar energy harvesting for continuous, self-sustaining operation without external charging.</li>
-            <li>Optimized power management and performed precise sensor calibration for energy-efficient, accurate data acquisition.</li>
-            <li>Validated the device through extensive experimental testing across varying sunlight intensities.</li>
-            <li>Presented the work at <strong>CIS 2025</strong> (IETE Delhi Centre); accepted for publication in Springer conference proceedings.</li>
-          </ul>
-        </article>
-
-        <article class="glass job">
-          <div class="job__top">
-            <div class="job__title">
-              <h3>Intern, Embedded Systems &amp; IoT Engineering</h3>
-              <p class="job__org">MaprGo · Bengaluru</p>
-            </div>
-            <span class="date">Aug 2023 – Dec 2023</span>
-          </div>
-          <ul class="ticks">
-            <li>Designed and developed IoT-enabled embedded systems on ESP32 and STM32, integrated with GPS and multi-sensor modules.</li>
-            <li>Implemented real-time data acquisition pipelines over Wi-Fi and MQTT, transmitting geospatial data to cloud platforms for storage and analysis.</li>
-            <li>Developed interrupt-driven Embedded C firmware with on-device filtering, noise reduction and data validation, improving measurement accuracy by <strong>25%</strong>.</li>
-            <li>Implemented sleep modes, duty cycling and peripheral optimization, achieving a <strong>30%</strong> improvement in energy efficiency.</li>
-            <li>Improved transmission reliability with buffering, synchronization and communication retries, reducing data loss and keeping cloud ingestion consistent.</li>
-            <li>Contributed to MaprGo's geospatial data acquisition pipeline for geospatial intelligence and digital twin systems.</li>
-          </ul>
-        </article>
-
-        <article class="glass job">
-          <div class="job__top">
-            <div class="job__title">
-              <h3>Networking Cloud Virtual Intern</h3>
-              <p class="job__org">AICTE NEAT · India (virtual)</p>
-            </div>
-            <span class="date">Jul 2023 – Oct 2023</span>
-          </div>
-          <ul class="ticks">
-            <li>Gained practical experience in networking fundamentals, cloud architecture and deployment strategies.</li>
-            <li>Worked on virtual projects involving cloud infrastructure, network configuration and troubleshooting.</li>
-          </ul>
-        </article>
+        <div class="patents">
+          <article class="glass patent">
+            <div class="patent__top"><span class="kicker">Design patent</span><span class="status status--ok">Granted</span></div>
+            <h3>Hair Serum Dispenser Cum Dryer</h3>
+            <p>Design Patent No. 407852-001</p>
+          </article>
+          <article class="glass patent">
+            <div class="patent__top"><span class="kicker">Utility patent</span><span class="status status--pub">Published</span></div>
+            <h3>Laptop Hinge Stabilizer Device</h3>
+            <p>Utility Patent No. 202421042659</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -854,70 +946,79 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <section class="sec" id="skills" aria-labelledby="skills-title">
     <div class="wrap">
       <header class="sec-head">
-        <p class="sec-label">Skills · 06</p>
-        <h2 id="skills-title">Skills &amp; <span class="grad">tools</span></h2>
-        <p class="sec-sub">From bare-metal firmware to the cloud it reports to.</p>
+        <div>
+          <p class="sec-label">05 · Skills</p>
+          <h2 id="skills-title">Skills &amp; <span class="grad">tools</span></h2>
+          <p class="sec-sub">From bare-metal firmware to the GPUs and cloud services around it.</p>
+        </div>
       </header>
 
       <div class="skills">
         <article class="glass skill">
-          <div class="skill__head"><h3>Embedded &amp; Firmware</h3><p class="skill__note">bare-metal · low-power</p></div>
-          <ul class="tags"><li>Embedded C</li><li>Interrupt-driven firmware</li><li>Sleep modes</li><li>Duty cycling</li><li>Peripheral optimization</li><li>Signal filtering</li><li>Noise reduction</li><li>Data validation</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></svg></i><div><h3>Languages</h3><span>Firmware and tooling</span></div></div>
+          <ul class="tags"><li>C</li><li>Embedded C</li><li>C++</li><li>Python</li><li>MATLAB</li><li>SQL</li></ul>
         </article>
         <article class="glass skill">
-          <div class="skill__head"><h3>Microcontrollers &amp; Hardware</h3><p class="skill__note">board-level</p></div>
-          <ul class="tags"><li>ESP32</li><li>STM32</li><li>GPS modules</li><li>Multi-sensor integration</li><li>UV sensors</li><li>Sensor calibration</li><li>Solar energy harvesting</li><li>Power management</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></i><div><h3>Protocols &amp; peripherals</h3><span>Talking to hardware</span></div></div>
+          <ul class="tags"><li>UART</li><li>SPI</li><li>I²C</li><li>CAN</li><li>PWM</li><li>ADC</li><li>Timers</li><li>Interrupts</li><li>BLE</li><li>MQTT</li></ul>
         </article>
         <article class="glass skill">
-          <div class="skill__head"><h3>IoT &amp; Connectivity</h3><p class="skill__note">device → cloud</p></div>
-          <ul class="tags"><li>Wi-Fi</li><li>MQTT</li><li>Real-time data acquisition</li><li>Buffering &amp; retries</li><li>Synchronization</li><li>Cloud ingestion</li><li>Geospatial data</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></i><div><h3>Platforms</h3><span>Boards and parts</span></div></div>
+          <ul class="tags"><li>STM32</li><li>ESP32</li><li>Arduino</li><li>Raspberry Pi</li><li>Sensors</li><li>Actuators</li></ul>
         </article>
         <article class="glass skill">
-          <div class="skill__head"><h3>Networking &amp; Cloud</h3><p class="skill__note">fundamentals</p></div>
-          <ul class="tags"><li>Networking fundamentals</li><li>Network configuration</li><li>Troubleshooting</li><li>Cloud architecture</li><li>Cloud infrastructure</li><li>Deployment</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></i><div><h3>Debug &amp; dev tools</h3><span>Finding the root cause</span></div></div>
+          <ul class="tags"><li>JTAG</li><li>Oscilloscopes</li><li>Logic analyzers</li><li>Multimeters</li><li>STM32CubeIDE</li><li>Arduino IDE</li><li>Git / GitHub</li></ul>
         </article>
         <article class="glass skill">
-          <div class="skill__head"><h3>Programming &amp; Data</h3><p class="skill__note">software side</p></div>
-          <ul class="tags"><li>Python (OOP)</li><li>SQL</li><li>Data management</li><li>Data analytics</li><li>Web application development</li><li>Software engineering fundamentals</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></i><div><h3>ML &amp; HPC</h3><span>Edge AI and performance</span></div></div>
+          <ul class="tags"><li>PyTorch</li><li>TensorFlow Lite</li><li>CUDA</li><li>OpenMP</li><li>Linux perf</li><li>nvprof</li><li>Intel VTune</li><li>SLURM</li></ul>
         </article>
         <article class="glass skill">
-          <div class="skill__head"><h3>Professional</h3><p class="skill__note">people</p></div>
-          <ul class="tags"><li>Communication</li><li>Teamwork</li><li>Leadership</li><li>Research presentation</li><li>Teaching</li></ul>
+          <div class="skill__head"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"/></svg></i><div><h3>Cloud &amp; data</h3><span>Where the data lands</span></div></div>
+          <ul class="tags"><li>AWS EC2</li><li>S3</li><li>Lambda</li><li>DynamoDB</li><li>MongoDB</li><li>MySQL</li><li>ETL</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ===== CERTIFICATIONS ===== -->
-  <section class="sec" id="certifications" aria-labelledby="certs-title">
+  <!-- ===== EDUCATION ===== -->
+  <section class="sec" id="education" aria-labelledby="education-title">
     <div class="wrap">
       <header class="sec-head">
-        <p class="sec-label">Certifications · 07</p>
-        <h2 id="certs-title">Licenses &amp; <span class="grad">certifications</span></h2>
-        <p class="sec-sub">Credentials from Oracle, McKinsey.org and foundation courses in networking and software engineering.</p>
+        <div>
+          <p class="sec-label">06 · Education</p>
+          <h2 id="education-title">Education &amp; <span class="grad">certifications</span></h2>
+        </div>
       </header>
 
+      <div class="edu">
+        <article class="glass school">
+          <div class="school__top">
+            <span class="logo" style="--h:0" aria-hidden="true">NU</span>
+            <div><h3>Northeastern University</h3><p class="school__deg">MS, Electrical and Computer Engineering · Computer Systems and Software</p></div>
+          </div>
+          <div class="school__row"><span class="gpa">GPA <b>3.852</b></span><span class="date">Jan 2026 – May 2028</span><span class="date">Boston, MA</span></div>
+          <h4>Coursework</h4>
+          <ul class="tags"><li>Fundamentals of Computer Engineering</li><li>High Performance Computing</li></ul>
+        </article>
+        <article class="glass school">
+          <div class="school__top">
+            <span class="logo" style="--h:36" aria-hidden="true">RC</span>
+            <div><h3>Shri Ramdeobaba College of Engineering and Management</h3><p class="school__deg">B.Tech, Electronics Engineering</p></div>
+          </div>
+          <div class="school__row"><span class="gpa">GPA <b>3.5</b></span><span class="date">2021 – May 2025</span><span class="date">Nagpur, India</span></div>
+          <h4>Coursework</h4>
+          <ul class="tags"><li>Embedded Systems</li><li>Microprocessors &amp; Microcontrollers</li><li>Computer Architecture</li><li>Computer Networks</li><li>Digital Design</li></ul>
+        </article>
+      </div>
+
       <div class="certs">
-        <article class="glass cert">
-          <div class="cert__issuer"><span class="avatar" aria-hidden="true">O</span><div><b>Oracle</b><span>Certification</span></div></div>
-          <h3>Oracle Certified Professional</h3>
-        </article>
-        <article class="glass cert">
-          <div class="cert__issuer"><span class="avatar" aria-hidden="true">O</span><div><b>Oracle</b><span>Certification</span></div></div>
-          <h3>Oracle Certified Foundations Associate</h3>
-        </article>
-        <article class="glass cert">
-          <div class="cert__issuer"><span class="avatar" aria-hidden="true">M</span><div><b>McKinsey.org</b><span>Program</span></div></div>
-          <h3>McKinsey.org Forward Program</h3>
-        </article>
-        <article class="glass cert">
-          <div class="cert__issuer"><span class="avatar" aria-hidden="true">N</span><div><b>Networking</b><span>Course</span></div></div>
-          <h3>Networking Basics Course</h3>
-        </article>
-        <article class="glass cert">
-          <div class="cert__issuer"><span class="avatar" aria-hidden="true">S</span><div><b>Software Engineering</b><span>Course</span></div></div>
-          <h3>Foundations of Software Engineering and Data Management</h3>
-        </article>
+        <div class="glass cert"><span class="logo" style="--h:2" aria-hidden="true">O</span><div><b>Oracle AI Foundations Associate</b><span>Oracle</span></div></div>
+        <div class="glass cert"><span class="logo" style="--h:2" aria-hidden="true">O</span><div><b>Oracle Generative AI Professional</b><span>Oracle</span></div></div>
+        <div class="glass cert"><span class="logo" style="--h:196" aria-hidden="true">C</span><div><b>Networking Basics</b><span>Cisco</span></div></div>
+        <div class="glass cert"><span class="logo" style="--h:222" aria-hidden="true">M</span><div><b>Forward Program</b><span>McKinsey.org</span></div></div>
+        <div class="glass cert"><span class="logo" style="--h:150" aria-hidden="true">SE</span><div><b>Foundations of Software Engineering &amp; Data Management</b><span>Course</span></div></div>
       </div>
     </div>
   </section>
@@ -926,46 +1027,40 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <section class="sec" id="contact" aria-labelledby="contact-title">
     <div class="wrap">
       <header class="sec-head">
-        <p class="sec-label">Contact · 08</p>
-        <h2 id="contact-title">Get in <span class="grad">touch</span></h2>
-        <p class="sec-sub">Open to co-op, internship and full-time roles in embedded systems, IoT and hardware.</p>
+        <div>
+          <p class="sec-label">07 · Contact</p>
+          <h2 id="contact-title">Let's <span class="grad">talk</span></h2>
+        </div>
       </header>
 
       <div class="glass contact">
         <div class="contact__grid">
           <div class="contact__lead">
-            <h3>Looking for an engineer who works close to the hardware?</h3>
-            <p>I'm looking for co-op, internship and full-time opportunities in embedded systems, IoT and hardware. I'm based in Boston and happy to talk.</p>
+            <h3>Hiring a firmware or embedded co-op for Spring 2027?</h3>
+            <p>I'm looking for firmware, embedded systems and IoT roles where I can work close to the hardware. I'm based in Boston and happy to talk.</p>
             <div class="actions">
-              <a class="btn btn--primary" href="mailto:vaishnavirathi456@gmail.com">
+              <a class="btn btn--primary" href="mailto:rathi.va@northeastern.edu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
                 Email me
               </a>
               <a class="btn" href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-
           <div class="rows">
-            <div class="row">
-              <div><span>Email</span><b id="email-text">vaishnavirathi456@gmail.com</b></div>
-              <button class="copy" id="copy-email" type="button">Copy</button>
-            </div>
-            <a class="row" href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener">
-              <div><span>LinkedIn</span><b>/in/vaishnavi-rathi12</b></div><i aria-hidden="true">↗</i>
-            </a>
-            <div class="row">
-              <div><span>Location</span><b>Boston, MA</b></div>
-            </div>
+            <div class="row"><div><span>Email</span><b id="email-text">rathi.va@northeastern.edu</b></div><button class="copy" id="copy-email" type="button">Copy</button></div>
+            <a class="row" href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener"><div><span>LinkedIn</span><b>/in/vaishnavi-rathi12</b></div><i aria-hidden="true">↗</i></a>
+            <a class="row" href="https://github.com/vaishnavirathi456-coder" target="_blank" rel="noopener"><div><span>GitHub</span><b>vaishnavirathi456-coder</b></div><i aria-hidden="true">↗</i></a>
+            <div class="row"><div><span>Location</span><b>Boston, MA</b></div></div>
           </div>
         </div>
 
-        <div class="term" aria-label="Decorative serial console">
+        <div class="term" aria-hidden="true">
           <div class="term__bar"><i></i><i></i><i></i><span>serial monitor · 115200 baud</span></div>
-<pre class="term__body" aria-hidden="true"><span class="t">[  0.000]</span> <span class="k">boot</span>   vr-ece firmware, rev 2026.10
-<span class="t">[  0.012]</span> <span class="k">i2c</span>    uv sensor online ........ <span class="ok">calibrated</span>
-<span class="t">[  0.020]</span> <span class="k">pwr</span>    solar input ............. <span class="ok">ok</span>, sleep mode armed
-<span class="t">[  0.031]</span> <span class="k">net</span>    wi-fi up, mqtt .......... <span class="ok">connected</span>
-<span class="t">[  0.040]</span> <span class="k">status</span> open to co-op · internship · full-time
+<pre class="term__body"><span class="t">[  0.000]</span> <span class="k">boot</span>    stm32 firmware ............ <span class="ok">ok</span>
+<span class="t">[  0.012]</span> <span class="k">i2c</span>     uv sensor ................. <span class="ok">calibrated</span>
+<span class="t">[  0.020]</span> <span class="k">pwr</span>     timer-based sleep ......... <span class="ok">armed</span>
+<span class="t">[  0.031]</span> <span class="k">ble</span>     health monitor ............ <span class="ok">advertising</span>
+<span class="t">[  0.040]</span> <span class="k">status</span>  seeking spring 2027 firmware co-op
 <span class="p">vaishnavi@portfolio:~$</span> <span class="caret"></span></pre>
         </div>
         <span class="sr" role="status" id="copy-status"></span>
@@ -978,12 +1073,9 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   <div class="wrap">
     <p>© 2026 Vaishnavi Rathi · Built in Boston, MA</p>
     <div class="socials">
-      <a href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4z"/></svg>
-      </a>
-      <a href="mailto:vaishnavirathi456@gmail.com" aria-label="Email">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-      </a>
+      <a href="https://github.com/vaishnavirathi456-coder" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/vaishnavi-rathi12" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm6.5 0h3.8v1.5h.06c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13v5.43h-4v-4.82c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-4z"/></svg></a>
+      <a href="mailto:rathi.va@northeastern.edu" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
       <a href="#top" aria-label="Back to top">↑</a>
     </div>
   </div>
@@ -994,34 +1086,43 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
 (function(){
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* photo: drop a photo.jpg next to this file to replace the monogram */
+  /* photo fallback: keep the monogram if photo.jpg is missing */
   var photo=document.getElementById('photo');
   function noPhoto(){if(photo&&photo.parentNode){photo.parentNode.removeChild(photo);}}
-  if(photo){
-    photo.addEventListener('error',noPhoto);
-    if(photo.complete&&photo.naturalWidth===0){noPhoto();}
-  }
+  if(photo){photo.addEventListener('error',noPhoto);if(photo.complete&&photo.naturalWidth===0){noPhoto();}}
 
   /* typewriter */
-  var roles=['embedded systems engineer','IoT builder','low-power firmware developer','hardware researcher','robotics TA'];
+  var roles=['embedded firmware engineer','IoT systems builder','TinyML developer','GPU performance profiler','graduate teaching assistant'];
   var typed=document.getElementById('typed'), ri=0, ci=roles[0].length, deleting=true;
   function tick(){
     var w=roles[ri];
     if(deleting){
-      if(ci>0){ci--;typed.textContent=w.slice(0,ci);setTimeout(tick,28);}
+      if(ci>0){ci--;typed.textContent=w.slice(0,ci);setTimeout(tick,26);}
       else{deleting=false;ri=(ri+1)%roles.length;setTimeout(tick,320);}
     }else{
-      w=roles[ri];
       if(ci<w.length){ci++;typed.textContent=w.slice(0,ci);setTimeout(tick,58);}
       else{deleting=true;setTimeout(tick,2300);}
     }
   }
   if(!reduce&&typed){setTimeout(tick,2600);}
 
+  /* project filters */
+  var cards=[].slice.call(document.querySelectorAll('#bento .proj'));
+  var fbtns=[].slice.call(document.querySelectorAll('.filters button'));
+  fbtns.forEach(function(b){
+    b.addEventListener('click',function(){
+      var f=b.getAttribute('data-filter');
+      fbtns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false');});
+      cards.forEach(function(c){
+        var cats=(c.getAttribute('data-cat')||'').split(' ');
+        c.hidden=!(f==='all'||cats.indexOf(f)>-1);
+      });
+    });
+  });
+
   /* scroll-spy nav */
   var links=[].slice.call(document.querySelectorAll('.nav a'));
-  var navList=document.querySelector('.nav ul');
-  var byId={};
+  var navList=document.querySelector('.nav ul'), byId={};
   links.forEach(function(a){byId[a.getAttribute('href').slice(1)]=a;});
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(entries){
@@ -1031,15 +1132,14 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
         var a=byId[e.target.id];
         if(a){
           a.classList.add('is-active');
-          var left=a.offsetLeft-(navList.clientWidth-a.offsetWidth)/2;
-          navList.scrollTo({left:left,behavior:reduce?'auto':'smooth'});
+          navList.scrollTo({left:a.offsetLeft-(navList.clientWidth-a.offsetWidth)/2,behavior:reduce?'auto':'smooth'});
         }
       });
     },{rootMargin:'-45% 0px -50% 0px'});
     document.querySelectorAll('main section[id]').forEach(function(s){io.observe(s);});
   }
 
-  /* glass spotlight follows the pointer */
+  /* glass spotlight */
   document.addEventListener('pointermove',function(e){
     var c=e.target.closest&&e.target.closest('.glass');
     if(!c) return;
@@ -1052,61 +1152,52 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
     if(c&&!c.contains(e.relatedTarget)){c.style.removeProperty('--mx');c.style.removeProperty('--my');}
   });
 
-  /* copy email */
-  var copyBtn=document.getElementById('copy-email'), status=document.getElementById('copy-status');
-  var email='vaishnavirathi456@gmail.com', timer;
-  function flash(msg,said){
-    copyBtn.textContent=msg;status.textContent=said;
-    clearTimeout(timer);timer=setTimeout(function(){copyBtn.textContent='Copy';},1800);
+  /* copy helpers */
+  var status=document.getElementById('copy-status');
+  function copier(btn,text,sourceId,label){
+    var timer;
+    function flash(msg,said){btn.textContent=msg;status.textContent=said;clearTimeout(timer);timer=setTimeout(function(){btn.textContent=label;},1800);}
+    function selectText(){
+      var el=document.getElementById(sourceId), r=document.createRange(), s=window.getSelection();
+      r.selectNodeContents(el);s.removeAllRanges();s.addRange(r);flash('Selected',label+': text selected');
+    }
+    btn.addEventListener('click',function(){
+      if(navigator.clipboard&&navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text()).then(function(){flash('Copied',label+': copied');},selectText);
+      }else{selectText();}
+    });
   }
-  function selectText(){
-    var el=document.getElementById('email-text'), r=document.createRange(), s=window.getSelection();
-    r.selectNodeContents(el);s.removeAllRanges();s.addRange(r);flash('Selected','Email address selected');
-  }
-  copyBtn.addEventListener('click',function(){
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(email).then(function(){flash('Copied','Email address copied');},selectText);
-    }else{selectText();}
-  });
+  copier(document.getElementById('copy-email'),function(){return 'rathi.va@northeastern.edu';},'email-text','Copy');
+  copier(document.getElementById('copy-cite'),function(){return document.getElementById('citation').textContent.replace(/\s+/g,' ').trim();},'citation','Copy citation');
 
   /* animated circuit-board background */
   var cv=document.getElementById('circuit');
   if(!cv||!cv.getContext) return;
   var ctx=cv.getContext('2d'), off=document.createElement('canvas'), octx=off.getContext('2d');
   var css=getComputedStyle(document.documentElement);
-  var TRACE=css.getPropertyValue('--trace').trim()||'rgba(150,140,255,.11)';
-  var PULSE=css.getPropertyValue('--pulse').trim()||'#C3B9FF';
-  var GLOW=css.getPropertyValue('--glow').trim()||'rgba(140,120,255,.38)';
+  var TRACE=css.getPropertyValue('--trace').trim()||'rgba(150,140,255,.13)';
+  var PULSE=css.getPropertyValue('--pulse').trim()||'#C9C0FF';
+  var GLOW=css.getPropertyValue('--glow').trim()||'rgba(140,120,255,.4)';
   var STEP=32, DIRS=[[1,0],[1,1],[0,1],[-1,1],[-1,0],[-1,-1],[0,-1],[1,-1]];
   var W=0,H=0,traces=[],pulses=[],last=0,lastDraw=0,running=!document.hidden,raf=0;
-
   function build(){
     var dpr=Math.min(window.devicePixelRatio||1,2);
     W=window.innerWidth;H=window.innerHeight;
-    cv.width=off.width=Math.round(W*dpr);
-    cv.height=off.height=Math.round(H*dpr);
-    ctx.setTransform(dpr,0,0,dpr,0,0);
-    octx.setTransform(dpr,0,0,dpr,0,0);
+    cv.width=off.width=Math.round(W*dpr);cv.height=off.height=Math.round(H*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);octx.setTransform(dpr,0,0,dpr,0,0);
     traces=[];
     var n=Math.max(14,Math.round(W*H/22000));
     for(var i=0;i<n;i++){
       var x=Math.round(Math.random()*W/STEP)*STEP, y=Math.round(Math.random()*H/STEP)*STEP;
       var d=Math.floor(Math.random()*4)*2, pts=[[x,y]], segs=2+Math.floor(Math.random()*4);
-      for(var s=0;s<segs;s++){
-        var k=(1+Math.floor(Math.random()*4))*STEP;
-        x+=DIRS[d][0]*k;y+=DIRS[d][1]*k;pts.push([x,y]);
-        d=(d+(Math.random()<.5?1:7))%8;
-      }
+      for(var s=0;s<segs;s++){var k=(1+Math.floor(Math.random()*4))*STEP;x+=DIRS[d][0]*k;y+=DIRS[d][1]*k;pts.push([x,y]);d=(d+(Math.random()<.5?1:7))%8;}
       var lens=[0];
       for(var j=1;j<pts.length;j++){lens.push(lens[j-1]+Math.hypot(pts[j][0]-pts[j-1][0],pts[j][1]-pts[j-1][1]));}
       traces.push({pts:pts,lens:lens,total:lens[lens.length-1]});
     }
-    octx.clearRect(0,0,W,H);
-    octx.lineWidth=1.1;octx.strokeStyle=TRACE;octx.lineJoin='round';
+    octx.clearRect(0,0,W,H);octx.lineWidth=1.1;octx.strokeStyle=TRACE;octx.lineJoin='round';
     traces.forEach(function(t){
-      octx.beginPath();
-      t.pts.forEach(function(p,j){if(j)octx.lineTo(p[0],p[1]);else octx.moveTo(p[0],p[1]);});
-      octx.stroke();
+      octx.beginPath();t.pts.forEach(function(p,j){if(j)octx.lineTo(p[0],p[1]);else octx.moveTo(p[0],p[1]);});octx.stroke();
       [t.pts[0],t.pts[t.pts.length-1]].forEach(function(p){octx.beginPath();octx.arc(p[0],p[1],2.6,0,Math.PI*2);octx.stroke();});
     });
     pulses=[];
@@ -1115,30 +1206,24 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   }
   function at(t,s){
     for(var j=1;j<t.lens.length;j++){
-      if(s<=t.lens[j]){
-        var a=t.pts[j-1],b=t.pts[j],seg=(t.lens[j]-t.lens[j-1])||1,f=(s-t.lens[j-1])/seg;
-        return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];
-      }
+      if(s<=t.lens[j]){var a=t.pts[j-1],b=t.pts[j],seg=(t.lens[j]-t.lens[j-1])||1,f=(s-t.lens[j-1])/seg;return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];}
     }
     return t.pts[t.pts.length-1];
   }
   function frame(ts){
     if(!running){raf=0;return;}
     raf=requestAnimationFrame(frame);
-    var minGap=W<700?33:16;
-    if(ts-lastDraw<minGap) return;
+    if(ts-lastDraw<(W<700?33:16)) return;
     lastDraw=ts;
-    var dt=last?Math.min(.05,(ts-last)/1000):0; last=ts;
+    var dt=last?Math.min(.05,(ts-last)/1000):0;last=ts;
     ctx.clearRect(0,0,W,H);ctx.drawImage(off,0,0,W,H);
     pulses.forEach(function(p){
       p.s+=p.v*dt;
       if(p.s>p.t.total+40){p.s=-Math.random()*p.t.total*1.5;}
       if(p.s<0) return;
       for(var k=0;k<10;k++){
-        var s=p.s-k*4;
-        if(s<0||s>p.t.total) continue;
-        var q=at(p.t,s);
-        ctx.globalAlpha=(1-k/10)*.85;ctx.fillStyle=PULSE;
+        var s=p.s-k*4;if(s<0||s>p.t.total) continue;
+        var q=at(p.t,s);ctx.globalAlpha=(1-k/10)*.85;ctx.fillStyle=PULSE;
         ctx.beginPath();ctx.arc(q[0],q[1],Math.max(.6,2.1-k*.13),0,Math.PI*2);ctx.fill();
       }
       ctx.globalAlpha=1;
@@ -1151,13 +1236,11 @@ a.row:hover{border-color:rgba(175,163,255,.4);background:rgba(106,85,245,.08)}
   }
   function start(){if(!reduce&&running&&!raf){last=0;raf=requestAnimationFrame(frame);}}
   build();start();
-  var rt, lastW=W, lastH=H;
+  var rt,lastW=W,lastH=H;
   window.addEventListener('resize',function(){
     clearTimeout(rt);
     rt=setTimeout(function(){
-      if(window.innerWidth!==lastW||Math.abs(window.innerHeight-lastH)>150){
-        lastW=window.innerWidth;lastH=window.innerHeight;build();
-      }
+      if(window.innerWidth!==lastW||Math.abs(window.innerHeight-lastH)>150){lastW=window.innerWidth;lastH=window.innerHeight;build();}
     },200);
   });
   document.addEventListener('visibilitychange',function(){running=!document.hidden;start();});
